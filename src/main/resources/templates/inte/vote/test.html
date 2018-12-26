@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body>
+    <div id="name">期末一考</div>
+    <div id="audit">张三</div>
+    <div title="1" class="timu">
+        <div class="wenti">1.中国首都</div>
+        <div class="daan">
+            <div title="A">北京</div>
+            <div title="B" >上海</div>
+            <div title="C">广州</div>
+            <div title="D">深圳</div>
+        </div>
+    </div>
+    <div title="2" class="timu">
+        <div class="wenti">1.2222</div>
+        <div class="daan">
+            <div title="A">北京1</div>
+            <div title="B">上海1</div>
+            <div title="C">广州1</div>
+            <div title="D">深圳1</div>
+        </div>
+    </div>
+    <div title="3" class="timu">
+        <div class="wenti">1.333333</div>
+        <div class="daan">
+            <div title="A">北京2</div>
+            <div title="B">上海2</div>
+            <div title="C">广州2</div>
+            <div title="D">深圳2</div>
+        </div>
+    </div>
+    <div id="show"></div>
+    <div th:include="include::footer"></div>
+
+</body>
+</html>
+<script>
+    var json = {};
+    json.name = $('#name').text();
+    json.audit = $('#audit').text();
+    var timu = [];
+    $('.timu').each(function () {
+        var tiem = {};
+        tiem.index = $(this).attr("title");
+        tiem.content=  $(this).find('.wenti').text();
+        var dana = [];
+        $(this).find('.daan').children().each(function () {
+            var andaItem = {};
+            andaItem.index = $(this).attr("title");
+            andaItem.contant = $(this).text();
+            dana.push(andaItem)
+        });
+        tiem.anda = dana;
+        timu.push(tiem);
+    })
+    json.timu = timu;
+    $('#show').text(JSON.stringify(json) )
+    console.log(json);
+
+</script>

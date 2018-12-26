@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.MessageDao">
+
+	<select id="get" resultType="com.uas.inte.domain.MessageDO">
+		select `mess_id`,`mess_name`,`mess_date`,`mess_content`,`user_id`,`notify_id` from leave_message where mess_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.inte.domain.MessageDO">
+		select `mess_id`,`mess_name`,`mess_date`,`mess_content`,`user_id`,`notify_id` from leave_message
+        <where>  
+		  		  <if test="messId != null and messId != ''"> and mess_id = #{messId} </if>
+		  		  <if test="messName != null and messName != ''"> and mess_name = #{messName} </if>
+		  		  <if test="messDate != null and messDate != ''"> and mess_date = #{messDate} </if>
+		  		  <if test="messContent != null and messContent != ''"> and mess_content = #{messContent} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		  <if test="notifyId != null and notifyId != ''"> and notify_id = #{notifyId} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by mess_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from leave_message
+		 <where>  
+		  		  <if test="messId != null and messId != ''"> and mess_id = #{messId} </if>
+		  		  <if test="messName != null and messName != ''"> and mess_name = #{messName} </if>
+		  		  <if test="messDate != null and messDate != ''"> and mess_date = #{messDate} </if>
+		  		  <if test="messContent != null and messContent != ''"> and mess_content = #{messContent} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		  <if test="notifyId != null and notifyId != ''"> and notify_id = #{notifyId} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.inte.domain.MessageDO" useGeneratedKeys="true" keyProperty="messId">
+		insert into leave_message
+		(
+			`mess_name`, 
+			`mess_date`, 
+			`mess_content`, 
+			`user_id`, 
+			`notify_id`
+		)
+		values
+		(
+			#{messName}, 
+			#{messDate}, 
+			#{messContent}, 
+			#{userId}, 
+			#{notifyId}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.inte.domain.MessageDO">
+		update leave_message 
+		<set>
+			<if test="messName != null">`mess_name` = #{messName}, </if>
+			<if test="messDate != null">`mess_date` = #{messDate}, </if>
+			<if test="messContent != null">`mess_content` = #{messContent}, </if>
+			<if test="userId != null">`user_id` = #{userId}, </if>
+			<if test="notifyId != null">`notify_id` = #{notifyId}</if>
+		</set>
+		where mess_id = #{messId}
+	</update>
+	
+	<delete id="remove">
+		delete from leave_message where mess_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from leave_message where mess_id in 
+		<foreach item="messId" collection="array" open="(" separator="," close=")">
+			#{messId}
+		</foreach>
+	</delete>
+
+</mapper>

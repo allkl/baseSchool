@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <form class="form-horizontal m-t" id="signupForm">
+
+                        <input id="stuId" name="stuId" th:value="${student.stuId}" type="hidden">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">学号：</label>
+                            <div class="col-sm-8">
+                                <input id="stuNumber" name="stuNumber" th:value="${student.stuNumber}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">名字：</label>
+                            <div class="col-sm-8">
+                                <input id="stuName" name="stuName" th:value="${student.stuName}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">性别：</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline">
+                                    <input type="radio" name="stuSex" value="1"
+                                           th:field="*{student.stuSex}"/>
+                                    男&nbsp;&nbsp;
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio"  name="stuSex" value="2"
+                                           th:field="*{student.stuSex}"/>
+                                    女&nbsp;&nbsp;
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">生日：</label>
+                            <div class="col-sm-8">
+                                <input id="stuBirthday" name="stuBirthdayStr" th:value="${student.stuBirthdayStr}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">年龄：</label>
+                            <div class="col-sm-8">
+                                <input id="stuAge" name="stuAge" th:value="${student.stuAge}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">地址：</label>
+                            <div class="col-sm-8">
+                                <input id="stuAddress" name="stuAddress" th:value="${student.stuAddress}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">头像：</label>
+                            <div class="col-sm-8">
+                                <input id="stuPhoto" name="stuPhoto" th:value="${student.stuPhoto}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">账户状态：</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline">
+                                    <input type="radio" name="stuStatus" value="1"
+                                           th:field="*{student.stuStatus}"/>
+                                    正常&nbsp;&nbsp;
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio"  name="stuStatus" value="2"
+                                           th:field="*{student.stuStatus}"/>
+                                    冻结&nbsp;&nbsp;
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">备注：</label>
+                            <div class="col-sm-8">
+                                <input id="stuRemarks" name="stuRemarks" th:value="${student.stuRemarks}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">所在班级：</label>
+                            <div class="col-sm-8">
+                                <input id="schId" name="schId" class="hidden" th:value="${student.schId}">
+                                <input id="className" name="className" class="form-control"
+                                       type="text" style="cursor: pointer;" onclick="openClass()"
+                                       readonly="readonly" placeholder="所属班级" th:value="${student.className}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-8 col-sm-offset-3">
+                                <button type="submit" class="btn btn-primary">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript" src="/js/appjs/inte/student/edit.js" th:src="@{/js/appjs/inte/student/edit.js}">
+</script>
+<script type="text/javascript" src="/js/plugins/layer/laydate/laydate.js" th:src="@{/js/plugins/layer/laydate/laydate.js}"></script>
+<script type="text/javascript">
+    laydate({
+        elem: '#stuBirthday'
+    });
+</script>
+</body>
+</html>

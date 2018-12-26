@@ -1,0 +1,91 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <style type="text/css">
+        <!--
+        label {display:block;}
+        -->
+    </style>
+</head>
+<body>
+
+<form id="my-form" action="reginfo.php" method="post">
+    <div>
+        <button type="submit">发布</button>
+        <button type="button" onclick = "SaveAs()">另存</button>
+        <input type="reset" />
+        <input type="text" id="testtext" /><br/>
+    </div>
+
+    <div class="achievement">
+        <h2>成果基本信息修改：</h2>
+        <p>成果名：成果位置：</p>
+    </div>
+
+    <div class="content">
+        <h2>成果内容</h2>
+        <p>some text. some text. some text...</p>
+    </div>
+    <div id="achieve"></div>
+    <input id = "addAchievebtn" type="button" onclick="addAchieve(this.form,this.parentNode);" value="+" />
+    <input id = "delAchievebtn" type="button" onclick="delAchieve();" value="-" />
+    <div id="achieveAddContent"></div>
+</form>
+
+<script type="text/javascript">
+
+    var textNumber = 0;
+    function insertAfter(newElement,targetElement) {
+        var parent = targetElement.parentNode;
+        if (parent.lastChild == targetElement) {
+            // 如果最后的节点是目标元素，则直接添加。因为默认是最后
+            parent.appendChild(newElement);
+        } else {
+            parent.insertBefore(newElement,targetElement.nextSibling);
+            //如果不是，则插入在目标元素的下一个兄弟节点 的前面。也就是目标元素的后面。
+        }
+    }
+
+    function addAchieve(form, afterElement){
+        // Increment the textbox number
+        textNumber++;
+        // Create the label
+        var label = document.createElement("label");
+        // Create the textbox
+        var textField = document.createElement("input");
+        textField.setAttribute("type","text");
+        textField.setAttribute("name","txt"+textNumber);
+        textField.setAttribute("id","txt"+textNumber);
+        // Add the label's text
+        label.appendChild(document.createTextNode("Text Box #"+textNumber+": "));
+        // Put the textbox inside
+        label.appendChild(textField);
+
+        var spanloc =document.createElement("span");
+        spanloc.appendChild(label);
+        var location;
+        if(textNumber==1)
+        {
+            var location = document.getElementById("delAchievebtn");
+        }else{
+            var num = (textNumber-1);
+            var location = document.getElementById("txt"+(textNumber-1));
+        }
+
+        insertAfter(spanloc,location);
+
+        //form.insertBefore(label,afterElement);
+        return false;
+    }
+
+    function delAchieve() {
+        if (textNumber > 0) { // If there's more than one text box
+            // Remove the last one added
+            var node = document.getElementById("txt"+textNumber).parentNode;
+            node.parentNode.removeChild(node);
+            textNumber--;
+        }
+    }
+</script>
+</body>
+</html>

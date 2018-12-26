@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.oa.dao.LeaveDao">
+
+    <select id="get" resultType="com.uas.oa.domain.LeaveDO">
+		select `lv_id`,`lv_name`,`lv_details`,`lv_type`,`lv_proposer`,`lv_pro`,`apply_date`,`lv_approver`,`approve_date`,`lv_status`,`start_date`,`end_date`,`lv_remarks`,`lv_notifier`,`lv_files` from oa_leave where lv_id = #{value}
+	</select>
+
+    <select id="stuLeaveList" resultType="com.uas.oa.domain.LeaveDO">
+        select
+        `lv_id`,`lv_name`,`lv_details`,`lv_type`,`lv_proposer`,`lv_pro`,`apply_date`,`lv_approver`,`approve_date`,`lv_status`,`start_date`,`end_date`,`lv_remarks`,`lv_notifier`,`lv_files`
+        from oa_leave
+        <where>
+            lv_proposer is not null
+            <if test="lvId != null and lvId != ''">and lv_id = #{lvId}</if>
+            <if test="lvName != null and lvName != ''">and lv_name = #{lvName}</if>
+            <if test="lvDetails != null and lvDetails != ''">and lv_details = #{lvDetails}</if>
+            <if test="lvType != null and lvType != ''">and lv_type = #{lvType}</if>
+            <if test="lvProposer != null and lvProposer != ''">and lv_proposer = #{lvProposer}</if>
+            <if test="lvPro != null and lvPro != ''">and lv_pro = #{lvPro}</if>
+            <if test="applyDate != null and applyDate != ''">and apply_date = #{applyDate}</if>
+            <if test="lvApprover != null and lvApprover != ''">and lv_approver = #{lvApprover}</if>
+            <if test="approveDate != null and approveDate != ''">and approve_date = #{approveDate}</if>
+            <if test="lvStatus != null and lvStatus != ''">and lv_status = #{lvStatus}</if>
+            <if test="startDate != null and startDate != ''">and start_date = #{startDate}</if>
+            <if test="endDate != null and endDate != ''">and end_date = #{endDate}</if>
+            <if test="lvRemarks != null and lvRemarks != ''">and lv_remarks = #{lvRemarks}</if>
+            <if test="lvNotifier != null and lvNotifier != ''">and lv_notifier = #{lvNotifier}</if>
+            <if test="lvFiles != null and lvFiles != ''">and lv_files = #{lvFiles}</if>
+        </where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+            <otherwise>
+                order by lv_id desc
+            </otherwise>
+        </choose>
+        <if test="offset != null and limit != null">
+            limit #{offset}, #{limit}
+        </if>
+    </select>
+
+    <select id="teacherLeaveList" resultType="com.uas.oa.domain.LeaveDO">
+        select
+        `lv_id`,`lv_name`,`lv_details`,`lv_type`,`lv_proposer`,`lv_pro`,`apply_date`,`lv_approver`,`approve_date`,`lv_status`,`start_date`,`end_date`,`lv_remarks`,`lv_notifier`,`lv_files`
+        from oa_leave
+        <where>
+            lv_pro is not null
+            <if test="lvId != null and lvId != ''">and lv_id = #{lvId}</if>
+            <if test="lvName != null and lvName != ''">and lv_name = #{lvName}</if>
+            <if test="lvDetails != null and lvDetails != ''">and lv_details = #{lvDetails}</if>
+            <if test="lvType != null and lvType != ''">and lv_type = #{lvType}</if>
+            <if test="lvProposer != null and lvProposer != ''">and lv_proposer = #{lvProposer}</if>
+            <if test="lvPro != null and lvPro != ''">and lv_pro = #{lvPro}</if>
+            <if test="applyDate != null and applyDate != ''">and apply_date = #{applyDate}</if>
+            <if test="lvApprover != null and lvApprover != ''">and lv_approver = #{lvApprover}</if>
+            <if test="approveDate != null and approveDate != ''">and approve_date = #{approveDate}</if>
+            <if test="lvStatus != null and lvStatus != ''">and lv_status = #{lvStatus}</if>
+            <if test="startDate != null and startDate != ''">and start_date = #{startDate}</if>
+            <if test="endDate != null and endDate != ''">and end_date = #{endDate}</if>
+            <if test="lvRemarks != null and lvRemarks != ''">and lv_remarks = #{lvRemarks}</if>
+            <if test="lvNotifier != null and lvNotifier != ''">and lv_notifier = #{lvNotifier}</if>
+            <if test="lvFiles != null and lvFiles != ''">and lv_files = #{lvFiles}</if>
+        </where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+            <otherwise>
+                order by lv_id desc
+            </otherwise>
+        </choose>
+        <if test="offset != null and limit != null">
+            limit #{offset}, #{limit}
+        </if>
+    </select>
+
+    <select id="count" resultType="int">
+        select count(*) from oa_leave
+        <where>
+            <if test="lvId != null and lvId != ''">and lv_id = #{lvId}</if>
+            <if test="lvName != null and lvName != ''">and lv_name = #{lvName}</if>
+            <if test="lvDetails != null and lvDetails != ''">and lv_details = #{lvDetails}</if>
+            <if test="lvType != null and lvType != ''">and lv_type = #{lvType}</if>
+            <if test="lvProposer != null and lvProposer != ''">and lv_proposer = #{lvProposer}</if>
+            <if test="lvPro != null and lvPro != ''">and lv_pro = #{lvPro}</if>
+            <if test="applyDate != null and applyDate != ''">and apply_date = #{applyDate}</if>
+            <if test="lvApprover != null and lvApprover != ''">and lv_approver = #{lvApprover}</if>
+            <if test="approveDate != null and approveDate != ''">and approve_date = #{approveDate}</if>
+            <if test="lvStatus != null and lvStatus != ''">and lv_status = #{lvStatus}</if>
+            <if test="startDate != null and startDate != ''">and start_date = #{startDate}</if>
+            <if test="endDate != null and endDate != ''">and end_date = #{endDate}</if>
+            <if test="lvRemarks != null and lvRemarks != ''">and lv_remarks = #{lvRemarks}</if>
+            <if test="lvNotifier != null and lvNotifier != ''">and lv_notifier = #{lvNotifier}</if>
+            <if test="lvFiles != null and lvFiles != ''">and lv_files = #{lvFiles}</if>
+        </where>
+    </select>
+
+    <insert id="save" parameterType="com.uas.oa.domain.LeaveDO" useGeneratedKeys="true" keyProperty="lvId">
+		insert into oa_leave
+		(
+			`lv_name`, 
+			`lv_details`, 
+			`lv_type`, 
+			`lv_proposer`, 
+			`lv_pro`, 
+			`apply_date`, 
+			`lv_approver`, 
+			`approve_date`, 
+			`lv_status`, 
+			`start_date`, 
+			`end_date`, 
+			`lv_remarks`, 
+			`lv_notifier`, 
+			`lv_files`
+		)
+		values
+		(
+			#{lvName}, 
+			#{lvDetails}, 
+			#{lvType}, 
+			#{lvProposer}, 
+			#{lvPro}, 
+			#{applyDate}, 
+			#{lvApprover}, 
+			#{approveDate}, 
+			#{lvStatus}, 
+			#{startDate}, 
+			#{endDate}, 
+			#{lvRemarks}, 
+			#{lvNotifier}, 
+			#{lvFiles}
+		)
+	</insert>
+
+    <update id="update" parameterType="com.uas.oa.domain.LeaveDO">
+        update oa_leave
+        <set>
+            <if test="lvName != null">`lv_name` = #{lvName},</if>
+            <if test="lvDetails != null">`lv_details` = #{lvDetails},</if>
+            <if test="lvType != null">`lv_type` = #{lvType},</if>
+            <if test="lvProposer != null">`lv_proposer` = #{lvProposer},</if>
+            <if test="lvPro != null">`lv_pro` = #{lvPro},</if>
+            <if test="applyDate != null">`apply_date` = #{applyDate},</if>
+            <if test="lvApprover != null">`lv_approver` = #{lvApprover},</if>
+            <if test="approveDate != null">`approve_date` = #{approveDate},</if>
+            <if test="lvStatus != null">`lv_status` = #{lvStatus},</if>
+            <if test="startDate != null">`start_date` = #{startDate},</if>
+            <if test="endDate != null">`end_date` = #{endDate},</if>
+            <if test="lvRemarks != null">`lv_remarks` = #{lvRemarks},</if>
+            <if test="lvNotifier != null">`lv_notifier` = #{lvNotifier},</if>
+            <if test="lvFiles != null">`lv_files` = #{lvFiles}</if>
+        </set>
+        where lv_id = #{lvId}
+    </update>
+
+    <delete id="remove">
+		delete from oa_leave where lv_id = #{value}
+	</delete>
+
+    <delete id="batchRemove">
+        delete from oa_leave where lv_id in
+        <foreach item="lvId" collection="array" open="(" separator="," close=")">
+            #{lvId}
+        </foreach>
+    </delete>
+
+</mapper>

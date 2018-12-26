@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.common.dao.FileDao">
+
+	<select id="get" resultType="com.uas.common.domain.FileDO">
+		select `file_id`,`file_name`,`file_type`,`file_url`,`creat_date`,`file_remarks` from sys_file where file_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.common.domain.FileDO">
+		select `file_id`,`file_name`,`file_type`,`file_url`,`creat_date`,`file_remarks` from sys_file
+        <where>  
+		  		  <if test="fileId != null and fileId != ''"> and file_id = #{fileId} </if>
+		  		  <if test="fileName != null and fileName != ''"> and file_name = #{fileName} </if>
+		  		  <if test="fileType != null and fileType != ''"> and file_type = #{fileType} </if>
+		  		  <if test="fileUrl != null and fileUrl != ''"> and file_url = #{fileUrl} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="fileRemarks != null and fileRemarks != ''"> and file_remarks = #{fileRemarks} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by file_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from sys_file
+		 <where>  
+		  		  <if test="fileId != null and fileId != ''"> and file_id = #{fileId} </if>
+		  		  <if test="fileName != null and fileName != ''"> and file_name = #{fileName} </if>
+		  		  <if test="fileType != null and fileType != ''"> and file_type = #{fileType} </if>
+		  		  <if test="fileUrl != null and fileUrl != ''"> and file_url = #{fileUrl} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="fileRemarks != null and fileRemarks != ''"> and file_remarks = #{fileRemarks} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.common.domain.FileDO" useGeneratedKeys="true" keyProperty="fileId">
+		insert into sys_file
+		(
+			`file_name`, 
+			`file_type`, 
+			`file_url`, 
+			`creat_date`, 
+			`file_remarks`
+		)
+		values
+		(
+			#{fileName}, 
+			#{fileType}, 
+			#{fileUrl}, 
+			#{creatDate}, 
+			#{fileRemarks}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.common.domain.FileDO">
+		update sys_file 
+		<set>
+			<if test="fileName != null">`file_name` = #{fileName}, </if>
+			<if test="fileType != null">`file_type` = #{fileType}, </if>
+			<if test="fileUrl != null">`file_url` = #{fileUrl}, </if>
+			<if test="creatDate != null">`creat_date` = #{creatDate}, </if>
+			<if test="fileRemarks != null">`file_remarks` = #{fileRemarks}</if>
+		</set>
+		where file_id = #{fileId}
+	</update>
+	
+	<delete id="remove">
+		delete from sys_file where file_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from sys_file where file_id in 
+		<foreach item="fileId" collection="array" open="(" separator="," close=")">
+			#{fileId}
+		</foreach>
+	</delete>
+
+</mapper>

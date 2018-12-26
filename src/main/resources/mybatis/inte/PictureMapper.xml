@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.PictureDao">
+
+    <select id="get" resultType="com.uas.inte.domain.PictureDO">
+		select `pic_id`,`pic_name`,`pic_url`,`pic_date`,`pic_type`,`pic_status`,`parent_id`,`pic_remarks`,`sch_id` from picture where pic_id = #{value}
+	</select>
+
+    <select id="pictureList" resultType="com.uas.inte.domain.PictureDO">
+        select `pic_id`,`pic_name`,`pic_url`,`pic_date`,`pic_type`,`pic_status`,`parent_id`,`pic_remarks`,`sch_id` from
+        picture
+        <where>
+            pic_type = 1
+            <if test="picId != null and picId != ''">and pic_id = #{picId}</if>
+            <if test="picName != null and picName != ''">and pic_name = #{picName}</if>
+            <if test="picUrl != null and picUrl != ''">and pic_url = #{picUrl}</if>
+            <if test="picDate != null and picDate != ''">and pic_date = #{picDate}</if>
+            <!--<if test="picType != null and picType != ''">and pic_type = #{picType}</if>-->
+            <if test="picStatus != null and picStatus != ''">and pic_status = #{picStatus}</if>
+            <if test="parentId != null and parentId != ''">and parent_id = #{parentId}</if>
+            <if test="picRemarks != null and picRemarks != ''">and pic_remarks = #{picRemarks}</if>
+            <if test="schId != null and schId != ''">and sch_id = #{schId}</if>
+        </where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+            <otherwise>
+                order by pic_id desc
+            </otherwise>
+        </choose>
+        <if test="offset != null and limit != null">
+            limit #{offset}, #{limit}
+        </if>
+    </select>
+
+    <select id="videoList" resultType="com.uas.inte.domain.PictureDO">
+        select `pic_id`,`pic_name`,`pic_url`,`pic_date`,`pic_type`,`pic_status`,`parent_id`,`pic_remarks`,`sch_id` from
+        picture
+        <where>
+            pic_type = 2
+            <if test="picId != null and picId != ''">and pic_id = #{picId}</if>
+            <if test="picName != null and picName != ''">and pic_name = #{picName}</if>
+            <if test="picUrl != null and picUrl != ''">and pic_url = #{picUrl}</if>
+            <if test="picDate != null and picDate != ''">and pic_date = #{picDate}</if>
+            <!--<if test="picType != null and picType != ''">and pic_type = #{picType}</if>-->
+            <if test="picStatus != null and picStatus != ''">and pic_status = #{picStatus}</if>
+            <if test="parentId != null and parentId != ''">and parent_id = #{parentId}</if>
+            <if test="picRemarks != null and picRemarks != ''">and pic_remarks = #{picRemarks}</if>
+            <if test="schId != null and schId != ''">and sch_id = #{schId}</if>
+        </where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+            <otherwise>
+                order by pic_id desc
+            </otherwise>
+        </choose>
+        <if test="offset != null and limit != null">
+            limit #{offset}, #{limit}
+        </if>
+    </select>
+
+    <select id="count" resultType="int">
+        select count(*) from picture
+        <where>
+            <if test="picId != null and picId != ''">and pic_id = #{picId}</if>
+            <if test="picName != null and picName != ''">and pic_name = #{picName}</if>
+            <if test="picUrl != null and picUrl != ''">and pic_url = #{picUrl}</if>
+            <if test="picDate != null and picDate != ''">and pic_date = #{picDate}</if>
+            <if test="picType != null and picType != ''">and pic_type = #{picType}</if>
+            <if test="picStatus != null and picStatus != ''">and pic_status = #{picStatus}</if>
+            <if test="parentId != null and parentId != ''">and parent_id = #{parentId}</if>
+            <if test="picRemarks != null and picRemarks != ''">and pic_remarks = #{picRemarks}</if>
+            <if test="schId != null and schId != ''">and sch_id = #{schId}</if>
+        </where>
+    </select>
+
+    <insert id="save" parameterType="com.uas.inte.domain.PictureDO" useGeneratedKeys="true" keyProperty="picId">
+		insert into picture
+		(
+			`pic_name`, 
+			`pic_url`, 
+			`pic_date`, 
+			`pic_type`, 
+			`pic_status`, 
+			`parent_id`, 
+			`pic_remarks`, 
+			`sch_id`
+		)
+		values
+		(
+			#{picName}, 
+			#{picUrl}, 
+			#{picDate}, 
+			#{picType}, 
+			#{picStatus}, 
+			#{parentId}, 
+			#{picRemarks}, 
+			#{schId}
+		)
+	</insert>
+
+    <update id="update" parameterType="com.uas.inte.domain.PictureDO">
+        update picture
+        <set>
+            <if test="picName != null">`pic_name` = #{picName},</if>
+            <if test="picUrl != null">`pic_url` = #{picUrl},</if>
+            <if test="picDate != null">`pic_date` = #{picDate},</if>
+            <if test="picType != null">`pic_type` = #{picType},</if>
+            <if test="picStatus != null">`pic_status` = #{picStatus},</if>
+            <if test="parentId != null">`parent_id` = #{parentId},</if>
+            <if test="picRemarks != null">`pic_remarks` = #{picRemarks},</if>
+            <if test="schId != null">`sch_id` = #{schId}</if>
+        </set>
+        where pic_id = #{picId}
+    </update>
+
+    <delete id="remove">
+		delete from picture where pic_id = #{value}
+	</delete>
+
+    <delete id="batchRemove">
+        delete from picture where pic_id in
+        <foreach item="picId" collection="array" open="(" separator="," close=")">
+            #{picId}
+        </foreach>
+    </delete>
+
+</mapper>

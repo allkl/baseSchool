@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.VoteDao">
+
+	<select id="get" resultType="com.uas.inte.domain.VoteDO">
+		select `vote_id`,`vote_name`,`vote_type`,`creator`,`creat_date`,`vote_date`,`voter`,`vote_file`,`vote_remarks`,`vote_status` from vote where vote_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.inte.domain.VoteDO">
+		select `vote_id`,`vote_name`,`vote_type`,`creator`,`creat_date`,`vote_date`,`voter`,`vote_file`,`vote_remarks`,`vote_status` from vote
+        <where>  
+		  		  <if test="voteId != null and voteId != ''"> and vote_id = #{voteId} </if>
+		  		  <if test="voteName != null and voteName != ''"> and vote_name = #{voteName} </if>
+		  		  <if test="voteType != null and voteType != ''"> and vote_type = #{voteType} </if>
+		  		  <if test="creator != null and creator != ''"> and creator = #{creator} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="voteDate != null and voteDate != ''"> and vote_date = #{voteDate} </if>
+		  		  <if test="voter != null and voter != ''"> and voter = #{voter} </if>
+		  		  <if test="voteFile != null and voteFile != ''"> and vote_file = #{voteFile} </if>
+		  		  <if test="voteRemarks != null and voteRemarks != ''"> and vote_remarks = #{voteRemarks} </if>
+		  		  <if test="voteStatus != null and voteStatus != ''"> and vote_status = #{voteStatus} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by vote_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from vote
+		 <where>  
+		  		  <if test="voteId != null and voteId != ''"> and vote_id = #{voteId} </if>
+		  		  <if test="voteName != null and voteName != ''"> and vote_name = #{voteName} </if>
+		  		  <if test="voteType != null and voteType != ''"> and vote_type = #{voteType} </if>
+		  		  <if test="creator != null and creator != ''"> and creator = #{creator} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="voteDate != null and voteDate != ''"> and vote_date = #{voteDate} </if>
+		  		  <if test="voter != null and voter != ''"> and voter = #{voter} </if>
+		  		  <if test="voteFile != null and voteFile != ''"> and vote_file = #{voteFile} </if>
+		  		  <if test="voteRemarks != null and voteRemarks != ''"> and vote_remarks = #{voteRemarks} </if>
+		  		  <if test="voteStatus != null and voteStatus != ''"> and vote_status = #{voteStatus} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.inte.domain.VoteDO" useGeneratedKeys="true" keyProperty="voteId">
+		insert into vote
+		(
+			`vote_name`, 
+			`vote_type`, 
+			`creator`, 
+			`creat_date`, 
+			`vote_date`, 
+			`voter`, 
+			`vote_file`, 
+			`vote_remarks`, 
+			`vote_status`
+		)
+		values
+		(
+			#{voteName}, 
+			#{voteType}, 
+			#{creator}, 
+			#{creatDate}, 
+			#{voteDate}, 
+			#{voter}, 
+			#{voteFile}, 
+			#{voteRemarks}, 
+			#{voteStatus}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.inte.domain.VoteDO">
+		update vote 
+		<set>
+			<if test="voteName != null">`vote_name` = #{voteName}, </if>
+			<if test="voteType != null">`vote_type` = #{voteType}, </if>
+			<if test="creator != null">`creator` = #{creator}, </if>
+			<if test="creatDate != null">`creat_date` = #{creatDate}, </if>
+			<if test="voteDate != null">`vote_date` = #{voteDate}, </if>
+			<if test="voter != null">`voter` = #{voter}, </if>
+			<if test="voteFile != null">`vote_file` = #{voteFile}, </if>
+			<if test="voteRemarks != null">`vote_remarks` = #{voteRemarks}, </if>
+			<if test="voteStatus != null">`vote_status` = #{voteStatus}</if>
+		</set>
+		where vote_id = #{voteId}
+	</update>
+	
+	<delete id="remove">
+		delete from vote where vote_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from vote where vote_id in 
+		<foreach item="voteId" collection="array" open="(" separator="," close=")">
+			#{voteId}
+		</foreach>
+	</delete>
+
+</mapper>

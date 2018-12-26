@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="ibox-content" id="jstree_div">
+                <div id="deptTree"></div>
+            </div>
+            <!--<div class="form-group hidden">-->
+            <div class="form-group">
+                <div class="col-sm-12 col-sm-offset-12" style="text-align:center;margin-top: 20px">
+                    <button type="submit" class="btn btn-primary" onclick="getChooseData()">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include :: footer"></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        getTreeData()
+    });
+    function getTreeData() {
+        $.ajax({
+            type : "GET",
+            url : ctx+"/system/sysSchool/tree",
+            success : function(tree) {
+                loadTree(tree);
+            }
+        });
+    }
+    function loadTree(tree) {
+        $('#deptTree').jstree({
+            'core' : {
+                'data' : tree,
+                "check_callback": true,
+                'multiple': false
+            },
+            "force_text": true,
+            "plugins" : [ "search","sort", "types", "checkbox", "themes", "html_data"],
+            "checkbox": {
+                "keep_selected_style": false,//是否默认选中
+                "tie_selection": false
+            },
+        });
+        $('#deptTree').jstree().open_all();
+    }
+
+    var nodesValue = [];
+    var nodesId = [];
+
+    $('#deptTree').bind("activate_node.jstree", function(e, data) {
+        if(data.node.id!=-1){
+            // parent.loadDept(data.node.id,data.node.text);
+             // 获取窗口索引
+            var isPush = false;
+            nodesId.forEach(function(val, index) {
+                if(data.node.id==val){
+                    nodesId.splice(index,1);
+                    nodesValue.splice(index,1);
+                    isPush = true;
+                }
+            });
+            if(!isPush){
+                nodesValue.push(data.node.text);
+                nodesId.push(data.node.id);
+            }
+
+        }
+    });
+    function getChooseData() {
+        parent.loadDept(nodesId,nodesValue);
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index)
+    }
+
+
+</script>
+</body>
+
+</html>

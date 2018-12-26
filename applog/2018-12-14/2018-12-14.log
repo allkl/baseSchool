@@ -1,0 +1,1479 @@
+2018-12-14 09:44:03 -Starting InteApplication on DESKTOP-OP3JU0Q with PID 11948 (E:\IDEA_projects\WisdomSchool\integral\target\classes started by CJX in E:\IDEA_projects\WisdomSchool\integral)
+2018-12-14 09:44:03 -The following profiles are active: dev
+2018-12-14 09:44:04 -HV000001: Hibernate Validator 5.3.6.Final
+2018-12-14 09:44:04 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66ce957f: startup date [Fri Dec 14 09:44:04 CST 2018]; root of context hierarchy
+2018-12-14 09:44:12 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-14 09:44:17 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-14 09:44:20 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ab2103ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:21 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$9f94c850] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:21 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:21 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:21 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$3a33954e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:21 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:22 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:22 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:22 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$620ecd8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:22 -Bean 'shiroConfig' of type [com.uas.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$32539fa5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:24 -Bean 'userRealm' of type [com.uas.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:24 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/E:/MavenRepositories/m2/repository/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-12-14 09:44:24 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:24 -Cache with name 'com.uas.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-12-14 09:44:24 -Added EhCache named [com.uas.system.shiro.UserRealm.authorizationCache]
+2018-12-14 09:44:24 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:24 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:25 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:25 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:44:28 -Tomcat initialized with port(s): 8011 (http)
+2018-12-14 09:44:28 -Starting service [Tomcat]
+2018-12-14 09:44:28 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-14 09:44:29 -Initializing Spring embedded WebApplicationContext
+2018-12-14 09:44:29 -Root WebApplicationContext: initialization completed in 24460 ms
+2018-12-14 09:44:31 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 09:44:31 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 09:44:31 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 09:44:31 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 09:44:31 -Filter xssFilter was not registered (disabled)
+2018-12-14 09:44:31 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-14 09:44:31 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-12-14 09:44:31 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-12-14 09:44:31 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 09:44:32 -{dataSource-1} inited
+2018-12-14 09:44:33 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+2018-12-14 09:44:33 -{dataSource-1} closed
+2018-12-14 09:44:33 -Stopping service [Tomcat]
+2018-12-14 09:44:33 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-14 09:44:33 -Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.uas.InteApplication.main(InteApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$94e31ebe.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$94e31ebe$$FastClassBySpringCGLIB$$5e12300e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$94e31ebe.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 69 common frames omitted
+Caused by: org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 72 common frames omitted
+2018-12-14 09:46:42 -Starting InteApplication on DESKTOP-OP3JU0Q with PID 7420 (E:\IDEA_projects\WisdomSchool\integral\target\classes started by CJX in E:\IDEA_projects\WisdomSchool\integral)
+2018-12-14 09:46:43 -The following profiles are active: dev
+2018-12-14 09:46:44 -HV000001: Hibernate Validator 5.3.6.Final
+2018-12-14 09:46:44 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27953a83: startup date [Fri Dec 14 09:46:44 CST 2018]; root of context hierarchy
+2018-12-14 09:46:47 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-14 09:46:48 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-14 09:46:48 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$6177e79b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:49 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$55ebac3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:49 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:49 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:49 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$f08a793d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:50 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:50 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:50 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:50 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1865b17d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:50 -Bean 'shiroConfig' of type [com.uas.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$e8aa8394] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:51 -Bean 'userRealm' of type [com.uas.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:51 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/E:/MavenRepositories/m2/repository/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-12-14 09:46:51 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:51 -Cache with name 'com.uas.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-12-14 09:46:51 -Added EhCache named [com.uas.system.shiro.UserRealm.authorizationCache]
+2018-12-14 09:46:51 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:51 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:51 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:52 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:46:53 -Tomcat initialized with port(s): 8011 (http)
+2018-12-14 09:46:53 -Starting service [Tomcat]
+2018-12-14 09:46:53 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-14 09:46:53 -Initializing Spring embedded WebApplicationContext
+2018-12-14 09:46:53 -Root WebApplicationContext: initialization completed in 9235 ms
+2018-12-14 09:46:54 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 09:46:54 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 09:46:54 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 09:46:54 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 09:46:54 -Filter xssFilter was not registered (disabled)
+2018-12-14 09:46:54 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-14 09:46:54 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-12-14 09:46:54 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-12-14 09:46:54 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 09:46:55 -{dataSource-1} inited
+2018-12-14 09:46:56 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+2018-12-14 09:46:56 -{dataSource-1} closed
+2018-12-14 09:46:56 -Stopping service [Tomcat]
+2018-12-14 09:46:56 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-14 09:46:56 -Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logAspect': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.uas.InteApplication.main(InteApplication.java:20)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logServiceImpl': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logDao' defined in file [E:\IDEA_projects\WisdomSchool\integral\target\classes\com\uas\common\dao\LogDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1342)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IDEA_projects\WisdomSchool\integral\target\classes\mybatis\system\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:153)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4b3a02ad.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4b3a02ad$$FastClassBySpringCGLIB$$853fab8f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$4b3a02ad.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 18; columnNumber: 17; The content of elements must consist of well-formed character data or markup.
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:520)
+	... 69 common frames omitted
+Caused by: org.xml.sax.SAXParseException: The content of elements must consist of well-formed character data or markup.
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 72 common frames omitted
+2018-12-14 09:56:48 -Starting InteApplication on DESKTOP-OP3JU0Q with PID 10828 (E:\IDEA_projects\WisdomSchool\integral\target\classes started by CJX in E:\IDEA_projects\WisdomSchool\integral)
+2018-12-14 09:56:48 -The following profiles are active: dev
+2018-12-14 09:56:50 -HV000001: Hibernate Validator 5.3.6.Final
+2018-12-14 09:56:51 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27953a83: startup date [Fri Dec 14 09:56:51 CST 2018]; root of context hierarchy
+2018-12-14 09:56:55 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-14 09:56:56 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-14 09:56:56 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$c4fa6b8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$b96e302e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$540cfd2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:57 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7be8356c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:58 -Bean 'shiroConfig' of type [com.uas.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$4c2d0783] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:59 -Bean 'userRealm' of type [com.uas.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:59 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/E:/MavenRepositories/m2/repository/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-12-14 09:56:59 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:59 -Cache with name 'com.uas.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-12-14 09:56:59 -Added EhCache named [com.uas.system.shiro.UserRealm.authorizationCache]
+2018-12-14 09:56:59 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:59 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:56:59 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:57:00 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 09:57:01 -Tomcat initialized with port(s): 8011 (http)
+2018-12-14 09:57:01 -Starting service [Tomcat]
+2018-12-14 09:57:01 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-14 09:57:01 -Initializing Spring embedded WebApplicationContext
+2018-12-14 09:57:01 -Root WebApplicationContext: initialization completed in 10773 ms
+2018-12-14 09:57:03 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 09:57:03 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 09:57:03 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 09:57:03 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 09:57:03 -Filter xssFilter was not registered (disabled)
+2018-12-14 09:57:03 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-14 09:57:03 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-12-14 09:57:03 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-12-14 09:57:03 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 09:57:04 -{dataSource-1} inited
+2018-12-14 09:57:08 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-12-14 09:57:08 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-12-14 09:57:11 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.uas.common.domain.DictDO> com.uas.common.controller.DictController.listType()
+2018-12-14 09:57:11 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.uas.common.domain.DictDO> com.uas.common.controller.DictController.listByType(java.lang.String)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.add()
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/update]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.update(com.uas.common.domain.FileDO)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.save(com.uas.common.domain.FileDO)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.info(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-12-14 09:57:11 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.uas.common.controller.GeneratorController.list()
+2018-12-14 09:57:11 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.uas.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-12-14 09:57:11 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.uas.common.controller.GeneratorController.generator()
+2018-12-14 09:57:11 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.uas.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/common/generator/batchCode]}" onto public void com.uas.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-12-14 09:57:11 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.LogController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.uas.common.controller.LogController.log()
+2018-12-14 09:57:11 -Mapped "{[/common/log/list],methods=[GET]}" onto com.uas.common.domain.PageDO<com.uas.common.domain.LogDO> com.uas.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/error]}" onto public com.uas.common.utils.R com.uas.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-14 09:57:11 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.uas.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.update(com.uas.inte.domain.CurriculumDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.CurriculumController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.save(com.uas.inte.domain.CurriculumDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum/edit/{curId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/curriculum],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.Curriculum()
+2018-12-14 09:57:11 -Mapped "{[/inte/headmasterMessage],methods=[GET]}" onto java.lang.String com.uas.inte.controller.HeadmasterMessageController.headmasterMessage()
+2018-12-14 09:57:11 -Mapped "{[/inte/headmasterMessage/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.HeadmasterMessageController.headmasterMessageList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/headmasterMessage/replyMessage/{notifyId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.HeadmasterMessageController.replyMessage(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.update(com.uas.inte.domain.LeaveItemDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.LeaveItemController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.save(com.uas.inte.domain.LeaveItemDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem/edit/{lvId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/leaveItem],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.Item()
+2018-12-14 09:57:11 -Mapped "{[/inte/message/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/message/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/message/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/message/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.update(com.uas.inte.domain.MessageDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/message/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.MessageController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/message/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.save(com.uas.inte.domain.MessageDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/message/edit/{messId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/message],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.Message()
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.update(com.uas.inte.domain.NotifyDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.save(com.uas.inte.domain.NotifyDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/notify/edit/{notifyId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/notify],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.Notify()
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.update(com.uas.inte.domain.PaymentDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PaymentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.save(com.uas.inte.domain.PaymentDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/payment],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.Payment()
+2018-12-14 09:57:11 -Mapped "{[/inte/payment/edit/{stuPaymentId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.update(com.uas.inte.domain.PictureDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.save(com.uas.inte.domain.PictureDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/picture],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.Picture()
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/videoList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PictureController.videoList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/pictureList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PictureController.pictureList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/video],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.Video()
+2018-12-14 09:57:11 -Mapped "{[/inte/picture/edit/{picId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/score/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/score/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/score/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/score/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.update(com.uas.inte.domain.ScoreDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/score/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.ScoreController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/score/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.save(com.uas.inte.domain.ScoreDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/score],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.Score()
+2018-12-14 09:57:11 -Mapped "{[/inte/score/getStuNameList],methods=[GET]}" onto java.util.List<com.uas.inte.domain.StudentDO> com.uas.inte.controller.ScoreController.getStuNameList()
+2018-12-14 09:57:11 -Mapped "{[/inte/score/edit/{scoreId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/student/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/student/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/student/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/student/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.update(com.uas.inte.domain.StudentDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/student/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.StudentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/student/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.save(com.uas.inte.domain.StudentDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/student],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.Student()
+2018-12-14 09:57:11 -Mapped "{[/inte/student/edit/{stuId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.add()
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.update(com.uas.inte.domain.VoteDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.VoteController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.save(com.uas.inte.domain.VoteDO)
+2018-12-14 09:57:11 -Mapped "{[/inte/vote],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.Vote()
+2018-12-14 09:57:11 -Mapped "{[/inte/vote/edit/{voteId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/add],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.add()
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/update]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.update(com.uas.oa.domain.ApproveDO)
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.ApproveController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.save(com.uas.oa.domain.ApproveDO)
+2018-12-14 09:57:11 -Mapped "{[/oa/approve],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.Approve()
+2018-12-14 09:57:11 -Mapped "{[/oa/approve/edit/{approveId}],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/add],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.add()
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/update]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.update(com.uas.oa.domain.LeaveDO)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.save(com.uas.oa.domain.LeaveDO)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/stuLeave],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.stuLeave()
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/teacherLeave],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.teacherLeave()
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/stuLeaveList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.LeaveController.stuLeaveList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/teacherLeaveList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.LeaveController.teacherLeaveList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/oa/leave/edit/{lvId}],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.main()
+2018-12-14 09:57:11 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.logout()
+2018-12-14 09:57:11 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/login],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-12-14 09:57:11 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.login()
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.update(com.uas.system.domain.MenuDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.save(com.uas.system.domain.MenuDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.uas.common.domain.Tree<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.tree(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.uas.common.domain.Tree<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.tree()
+2018-12-14 09:57:11 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.add()
+2018-12-14 09:57:11 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.update(com.uas.system.domain.RoleDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.uas.system.domain.RoleDO> com.uas.system.controller.RoleController.list()
+2018-12-14 09:57:11 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.save(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.save(com.uas.system.domain.RoleDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.role()
+2018-12-14 09:57:11 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/add/{pId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.add(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.remove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/update]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.update(com.uas.system.domain.SchoolDO)
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/list],methods=[GET]}" onto public java.util.List<com.uas.system.domain.SchoolDO> com.uas.system.controller.SchoolController.list()
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.save(com.uas.system.domain.SchoolDO)
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/tree],methods=[GET]}" onto public com.uas.common.domain.Tree<com.uas.system.domain.SchoolDO> com.uas.system.controller.SchoolController.tree()
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/getTreeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.getTreeView()
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.school()
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/treeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.treeView()
+2018-12-14 09:57:11 -Mapped "{[/system/sysSchool/edit/{schId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.uas.system.domain.UserOnline> com.uas.system.controller.SessionController.list()
+2018-12-14 09:57:11 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.uas.system.controller.SessionController.sessionList()
+2018-12-14 09:57:11 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.uas.common.utils.R com.uas.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-12-14 09:57:11 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.uas.system.controller.SessionController.online()
+2018-12-14 09:57:11 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.uas.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.add(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.remove(java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/parent],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.parent(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.update(com.uas.system.domain.UserDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.save(com.uas.system.domain.UserDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-12-14 09:57:11 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.uas.common.domain.Tree<com.uas.system.domain.SchoolDO> com.uas.system.controller.UserController.tree()
+2018-12-14 09:57:11 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.treeView()
+2018-12-14 09:57:11 -Mapped "{[/sys/user/parentList],methods=[GET]}" onto com.uas.common.utils.PageUtils com.uas.system.controller.UserController.parentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.resetPwd(com.uas.system.vo.UserVO)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/exportExcel]}" onto public void com.uas.system.controller.UserController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-12-14 09:57:11 -Mapped "{[/sys/user/employee],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.employee(org.springframework.ui.Model)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/importExcel],methods=[POST]}" onto public java.lang.String com.uas.system.controller.UserController.importExcel(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2018-12-14 09:57:11 -Mapped "{[/sys/user/employeeList],methods=[GET]}" onto com.uas.common.utils.PageUtils com.uas.system.controller.UserController.employeeList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.updatePeronal(com.uas.system.domain.UserDO)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.adminResetPwd(com.uas.system.vo.UserVO)
+2018-12-14 09:57:11 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 09:57:11 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-14 09:57:11 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-14 09:57:11 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-14 09:57:11 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-14 09:57:12 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-12-14 09:57:13 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-12-14 09:57:13 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-12-14 09:57:14 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27953a83: startup date [Fri Dec 14 09:56:51 CST 2018]; root of context hierarchy
+2018-12-14 09:57:14 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 09:57:14 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 09:57:14 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 09:57:14 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-12-14 09:57:15 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 09:57:18 -Registering beans for JMX exposure on startup
+2018-12-14 09:57:18 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 09:57:18 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 09:57:18 -Starting beans in phase 2147483647
+2018-12-14 09:57:18 -Context refreshed
+2018-12-14 09:57:18 -Found 1 custom documentation plugin(s)
+2018-12-14 09:57:18 -Scanning for api listing references
+2018-12-14 09:57:19 -Generating unique operation named: removeUsingPOST_1
+2018-12-14 09:57:19 -Generating unique operation named: addUsingGET_1
+2018-12-14 09:57:19 -Generating unique operation named: editUsingGET_1
+2018-12-14 09:57:19 -Generating unique operation named: listUsingGET_1
+2018-12-14 09:57:19 -Generating unique operation named: removeUsingPOST_2
+2018-12-14 09:57:19 -Generating unique operation named: removeUsingPOST_3
+2018-12-14 09:57:19 -Generating unique operation named: saveUsingPOST_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingGET_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingHEAD_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingPOST_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingPUT_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingPATCH_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingDELETE_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingOPTIONS_1
+2018-12-14 09:57:19 -Generating unique operation named: updateUsingTRACE_1
+2018-12-14 09:57:19 -Generating unique operation named: addUsingGET_2
+2018-12-14 09:57:19 -Generating unique operation named: editUsingGET_2
+2018-12-14 09:57:19 -Generating unique operation named: listUsingGET_2
+2018-12-14 09:57:19 -Generating unique operation named: removeUsingPOST_4
+2018-12-14 09:57:19 -Generating unique operation named: removeUsingPOST_5
+2018-12-14 09:57:19 -Generating unique operation named: saveUsingPOST_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingGET_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingHEAD_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPOST_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPUT_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPATCH_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingDELETE_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingOPTIONS_2
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingTRACE_2
+2018-12-14 09:57:20 -Generating unique operation named: editUsingGET_3
+2018-12-14 09:57:20 -Generating unique operation named: listUsingGET_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPOST_3
+2018-12-14 09:57:20 -Generating unique operation named: addUsingGET_3
+2018-12-14 09:57:20 -Generating unique operation named: editUsingGET_4
+2018-12-14 09:57:20 -Generating unique operation named: removeUsingPOST_6
+2018-12-14 09:57:20 -Generating unique operation named: removeUsingPOST_7
+2018-12-14 09:57:20 -Generating unique operation named: saveUsingPOST_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingGET_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingHEAD_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPOST_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPUT_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPATCH_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingDELETE_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingOPTIONS_3
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingTRACE_3
+2018-12-14 09:57:20 -Generating unique operation named: addUsingGET_4
+2018-12-14 09:57:20 -Generating unique operation named: editUsingGET_5
+2018-12-14 09:57:20 -Generating unique operation named: listUsingGET_4
+2018-12-14 09:57:20 -Generating unique operation named: removeUsingPOST_8
+2018-12-14 09:57:20 -Generating unique operation named: removeUsingPOST_9
+2018-12-14 09:57:20 -Generating unique operation named: saveUsingPOST_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingGET_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingHEAD_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPOST_5
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPUT_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingPATCH_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingDELETE_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingOPTIONS_4
+2018-12-14 09:57:20 -Generating unique operation named: updateUsingTRACE_4
+2018-12-14 09:57:20 -Generating unique operation named: listUsingGET_5
+2018-12-14 09:57:20 -Generating unique operation named: removeUsingPOST_10
+2018-12-14 09:57:20 -Generating unique operation named: welcomeUsingGET_1
+2018-12-14 09:57:21 -Generating unique operation named: addUsingGET_5
+2018-12-14 09:57:21 -Generating unique operation named: editUsingGET_6
+2018-12-14 09:57:21 -Generating unique operation named: listUsingGET_6
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_11
+2018-12-14 09:57:21 -Generating unique operation named: saveUsingPOST_5
+2018-12-14 09:57:21 -Generating unique operation named: treeUsingGET_1
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPOST_6
+2018-12-14 09:57:21 -Generating unique operation named: addUsingGET_6
+2018-12-14 09:57:21 -Generating unique operation named: editUsingGET_7
+2018-12-14 09:57:21 -Generating unique operation named: listUsingGET_7
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_12
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_13
+2018-12-14 09:57:21 -Generating unique operation named: saveUsingPOST_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingGET_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingHEAD_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPOST_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPUT_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPATCH_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingDELETE_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingOPTIONS_5
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingTRACE_5
+2018-12-14 09:57:21 -Generating unique operation named: addUsingGET_7
+2018-12-14 09:57:21 -Generating unique operation named: editUsingGET_8
+2018-12-14 09:57:21 -Generating unique operation named: listUsingGET_8
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_14
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_15
+2018-12-14 09:57:21 -Generating unique operation named: saveUsingPOST_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingGET_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingHEAD_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPOST_8
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPUT_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPATCH_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingDELETE_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingOPTIONS_6
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingTRACE_6
+2018-12-14 09:57:21 -Generating unique operation named: addUsingGET_8
+2018-12-14 09:57:21 -Generating unique operation named: editUsingGET_9
+2018-12-14 09:57:21 -Generating unique operation named: listUsingGET_9
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_16
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_17
+2018-12-14 09:57:21 -Generating unique operation named: saveUsingPOST_8
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingGET_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingHEAD_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPOST_9
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPUT_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingPATCH_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingDELETE_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingOPTIONS_7
+2018-12-14 09:57:21 -Generating unique operation named: updateUsingTRACE_7
+2018-12-14 09:57:21 -Generating unique operation named: addUsingGET_9
+2018-12-14 09:57:21 -Generating unique operation named: editUsingGET_10
+2018-12-14 09:57:21 -Generating unique operation named: removeUsingPOST_18
+2018-12-14 09:57:22 -Generating unique operation named: removeUsingPOST_19
+2018-12-14 09:57:22 -Generating unique operation named: saveUsingPOST_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingGET_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingHEAD_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPOST_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPUT_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPATCH_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingDELETE_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingOPTIONS_8
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingTRACE_8
+2018-12-14 09:57:22 -Generating unique operation named: addUsingGET_10
+2018-12-14 09:57:22 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-12-14 09:57:22 -Generating unique operation named: editUsingGET_11
+2018-12-14 09:57:22 -Generating unique operation named: listUsingGET_10
+2018-12-14 09:57:22 -Generating unique operation named: saveUsingPOST_10
+2018-12-14 09:57:22 -Generating unique operation named: saveUsingPOST_11
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPOST_11
+2018-12-14 09:57:22 -Generating unique operation named: addUsingGET_11
+2018-12-14 09:57:22 -Generating unique operation named: editUsingGET_12
+2018-12-14 09:57:22 -Generating unique operation named: listUsingGET_11
+2018-12-14 09:57:22 -Generating unique operation named: removeUsingPOST_20
+2018-12-14 09:57:22 -Generating unique operation named: removeUsingPOST_21
+2018-12-14 09:57:22 -Generating unique operation named: saveUsingPOST_12
+2018-12-14 09:57:22 -Generating unique operation named: treeUsingGET_2
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingGET_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingHEAD_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPOST_12
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPUT_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPATCH_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingDELETE_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingOPTIONS_9
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingTRACE_9
+2018-12-14 09:57:22 -Generating unique operation named: addUsingGET_12
+2018-12-14 09:57:22 -Generating unique operation named: editUsingGET_13
+2018-12-14 09:57:22 -Generating unique operation named: listUsingGET_12
+2018-12-14 09:57:22 -Generating unique operation named: removeUsingPOST_22
+2018-12-14 09:57:22 -Generating unique operation named: removeUsingPOST_23
+2018-12-14 09:57:22 -Generating unique operation named: saveUsingPOST_13
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingGET_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingHEAD_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPOST_13
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPUT_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingPATCH_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingDELETE_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingOPTIONS_10
+2018-12-14 09:57:22 -Generating unique operation named: updateUsingTRACE_10
+2018-12-14 09:57:22 -Generating unique operation named: listUsingGET_13
+2018-12-14 09:57:22 -Generating unique operation named: listUsingHEAD_1
+2018-12-14 09:57:22 -Generating unique operation named: listUsingPOST_1
+2018-12-14 09:57:23 -Generating unique operation named: listUsingPUT_1
+2018-12-14 09:57:23 -Generating unique operation named: listUsingPATCH_1
+2018-12-14 09:57:23 -Generating unique operation named: listUsingDELETE_1
+2018-12-14 09:57:23 -Generating unique operation named: listUsingOPTIONS_1
+2018-12-14 09:57:23 -Generating unique operation named: listUsingTRACE_1
+2018-12-14 09:57:23 -Generating unique operation named: addUsingGET_13
+2018-12-14 09:57:23 -Generating unique operation named: editUsingGET_14
+2018-12-14 09:57:23 -Generating unique operation named: listUsingGET_14
+2018-12-14 09:57:23 -Generating unique operation named: removeUsingPOST_24
+2018-12-14 09:57:23 -Generating unique operation named: removeUsingPOST_25
+2018-12-14 09:57:23 -Generating unique operation named: saveUsingPOST_14
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingGET_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingHEAD_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPOST_14
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPUT_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPATCH_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingDELETE_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingOPTIONS_11
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingTRACE_11
+2018-12-14 09:57:23 -Generating unique operation named: addUsingGET_14
+2018-12-14 09:57:23 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-12-14 09:57:23 -Generating unique operation named: editUsingGET_15
+2018-12-14 09:57:23 -Generating unique operation named: removeUsingPOST_26
+2018-12-14 09:57:23 -Generating unique operation named: saveUsingPOST_15
+2018-12-14 09:57:23 -Generating unique operation named: treeUsingGET_3
+2018-12-14 09:57:23 -Generating unique operation named: treeViewUsingGET_1
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPOST_15
+2018-12-14 09:57:23 -Generating unique operation named: addUsingGET_15
+2018-12-14 09:57:23 -Generating unique operation named: editUsingGET_16
+2018-12-14 09:57:23 -Generating unique operation named: listUsingGET_15
+2018-12-14 09:57:23 -Generating unique operation named: removeUsingPOST_27
+2018-12-14 09:57:23 -Generating unique operation named: removeUsingPOST_28
+2018-12-14 09:57:23 -Generating unique operation named: saveUsingPOST_16
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingGET_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingHEAD_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPOST_16
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPUT_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingPATCH_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingDELETE_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingOPTIONS_12
+2018-12-14 09:57:23 -Generating unique operation named: updateUsingTRACE_12
+2018-12-14 09:57:23 -Starting...
+2018-12-14 09:57:23 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-12-14 09:57:23 -Started.
+2018-12-14 09:57:23 -Initializing ProtocolHandler ["http-nio-8011"]
+2018-12-14 09:57:23 -Starting ProtocolHandler ["http-nio-8011"]
+2018-12-14 09:57:23 -Using a shared selector for servlet write/read
+2018-12-14 09:57:24 -Tomcat started on port(s): 8011 (http)
+2018-12-14 09:57:24 -Started InteApplication in 39.782 seconds (JVM running for 45.294)
+2018-12-14 09:58:04 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 09:58:04 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 09:58:04 -FrameworkServlet 'dispatcherServlet': initialization completed in 143 ms
+2018-12-14 09:58:04 -Enabling session validation scheduler...
+2018-12-14 09:58:04 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 09:58:04 -HTTP METHOD : GET
+2018-12-14 09:58:04 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 09:58:04 -参数 : []
+2018-12-14 09:58:04 -耗时 : 7
+2018-12-14 09:58:05 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 09:58:05 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 09:58:05 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 09:58:05 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 09:58:05 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 09:58:05 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 09:58:05 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 09:58:13 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-12-14 09:58:14 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 09:58:14 -HTTP METHOD : GET
+2018-12-14 09:58:14 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 09:58:14 -参数 : []
+2018-12-14 09:58:14 -耗时 : 1
+2018-12-14 09:58:45 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 09:58:45 -HTTP METHOD : GET
+2018-12-14 09:58:45 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 09:58:45 -参数 : []
+2018-12-14 09:58:45 -耗时 : 0
+2018-12-14 09:59:12 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 09:59:12 -HTTP METHOD : GET
+2018-12-14 09:59:12 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 09:59:12 -参数 : []
+2018-12-14 09:59:12 -耗时 : 1
+2018-12-14 10:03:36 -Starting InteApplication on DESKTOP-OP3JU0Q with PID 10956 (E:\IDEA_projects\WisdomSchool\integral\target\classes started by CJX in E:\IDEA_projects\WisdomSchool\integral)
+2018-12-14 10:03:36 -The following profiles are active: dev
+2018-12-14 10:03:36 -HV000001: Hibernate Validator 5.3.6.Final
+2018-12-14 10:03:36 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62ea3440: startup date [Fri Dec 14 10:03:36 CST 2018]; root of context hierarchy
+2018-12-14 10:03:44 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-14 10:03:45 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-14 10:03:45 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$6be2e788] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:45 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$6056ac2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$faf5792a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22d0b16a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:46 -Bean 'shiroConfig' of type [com.uas.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$f3158381] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -Bean 'userRealm' of type [com.uas.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/E:/MavenRepositories/m2/repository/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-12-14 10:03:48 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -Cache with name 'com.uas.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-12-14 10:03:48 -Added EhCache named [com.uas.system.shiro.UserRealm.authorizationCache]
+2018-12-14 10:03:48 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:48 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-14 10:03:49 -Tomcat initialized with port(s): 8011 (http)
+2018-12-14 10:03:49 -Starting service [Tomcat]
+2018-12-14 10:03:49 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-12-14 10:03:50 -Initializing Spring embedded WebApplicationContext
+2018-12-14 10:03:50 -Root WebApplicationContext: initialization completed in 13133 ms
+2018-12-14 10:03:51 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-14 10:03:51 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-14 10:03:51 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-14 10:03:51 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-14 10:03:51 -Filter xssFilter was not registered (disabled)
+2018-12-14 10:03:51 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-12-14 10:03:51 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-12-14 10:03:51 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-12-14 10:03:51 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-14 10:03:52 -{dataSource-1} inited
+2018-12-14 10:03:55 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-12-14 10:03:55 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-12-14 10:03:57 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.uas.common.domain.DictDO> com.uas.common.controller.DictController.listType()
+2018-12-14 10:03:57 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.uas.common.domain.DictDO> com.uas.common.controller.DictController.listByType(java.lang.String)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.add()
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.remove(java.lang.Long[])
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/update]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.update(com.uas.common.domain.FileDO)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.save(com.uas.common.domain.FileDO)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.uas.common.utils.R com.uas.common.controller.FileController.info(java.lang.Long)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.uas.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-12-14 10:03:57 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.uas.common.controller.GeneratorController.list()
+2018-12-14 10:03:57 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.uas.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-12-14 10:03:57 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.uas.common.controller.GeneratorController.generator()
+2018-12-14 10:03:57 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.uas.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/common/generator/batchCode]}" onto public void com.uas.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-12-14 10:03:57 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.LogController.remove(java.lang.Long)
+2018-12-14 10:03:57 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.uas.common.controller.LogController.log()
+2018-12-14 10:03:57 -Mapped "{[/common/log/list],methods=[GET]}" onto com.uas.common.domain.PageDO<com.uas.common.domain.LogDO> com.uas.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-12-14 10:03:57 -Mapped "{[/error]}" onto public com.uas.common.utils.R com.uas.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-14 10:03:57 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.uas.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.add()
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.remove(java.lang.Long)
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.remove(java.lang.Long[])
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.update(com.uas.inte.domain.CurriculumDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.CurriculumController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.CurriculumController.save(com.uas.inte.domain.CurriculumDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.Curriculum()
+2018-12-14 10:03:57 -Mapped "{[/inte/curriculum/edit/{curId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.CurriculumController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/inte/headmasterMessage],methods=[GET]}" onto java.lang.String com.uas.inte.controller.HeadmasterMessageController.headmasterMessage()
+2018-12-14 10:03:57 -Mapped "{[/inte/headmasterMessage/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.HeadmasterMessageController.headmasterMessageList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/inte/headmasterMessage/replyMessage/{notifyId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.HeadmasterMessageController.replyMessage(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.add()
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.remove(java.lang.Long)
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.remove(java.lang.Long[])
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.update(com.uas.inte.domain.LeaveItemDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.LeaveItemController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.LeaveItemController.save(com.uas.inte.domain.LeaveItemDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.Item()
+2018-12-14 10:03:57 -Mapped "{[/inte/leaveItem/edit/{lvId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.LeaveItemController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:57 -Mapped "{[/inte/message/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.add()
+2018-12-14 10:03:57 -Mapped "{[/inte/message/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.remove(java.lang.Long)
+2018-12-14 10:03:57 -Mapped "{[/inte/message/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.remove(java.lang.Long[])
+2018-12-14 10:03:57 -Mapped "{[/inte/message/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.update(com.uas.inte.domain.MessageDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/message/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.MessageController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:57 -Mapped "{[/inte/message/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.MessageController.save(com.uas.inte.domain.MessageDO)
+2018-12-14 10:03:57 -Mapped "{[/inte/message],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.Message()
+2018-12-14 10:03:57 -Mapped "{[/inte/message/edit/{messId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.MessageController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.update(com.uas.inte.domain.NotifyDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.NotifyController.save(com.uas.inte.domain.NotifyDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/notify],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.Notify()
+2018-12-14 10:03:58 -Mapped "{[/inte/notify/edit/{notifyId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.update(com.uas.inte.domain.PaymentDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PaymentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PaymentController.save(com.uas.inte.domain.PaymentDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/payment],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.Payment()
+2018-12-14 10:03:58 -Mapped "{[/inte/payment/edit/{stuPaymentId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PaymentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.update(com.uas.inte.domain.PictureDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.PictureController.save(com.uas.inte.domain.PictureDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/video],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.Video()
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/picture],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.Picture()
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/pictureList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PictureController.pictureList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/videoList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.PictureController.videoList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/picture/edit/{picId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.PictureController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/score/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/score/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/score/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/score/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.update(com.uas.inte.domain.ScoreDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/score/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.ScoreController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/score/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.ScoreController.save(com.uas.inte.domain.ScoreDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/score],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.Score()
+2018-12-14 10:03:58 -Mapped "{[/inte/score/getStuNameList],methods=[GET]}" onto java.util.List<com.uas.inte.domain.StudentDO> com.uas.inte.controller.ScoreController.getStuNameList()
+2018-12-14 10:03:58 -Mapped "{[/inte/score/edit/{scoreId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.ScoreController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/student/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/student/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/student/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/student/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.update(com.uas.inte.domain.StudentDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/student/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.StudentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/student/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.StudentController.save(com.uas.inte.domain.StudentDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/student],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.Student()
+2018-12-14 10:03:58 -Mapped "{[/inte/student/edit/{stuId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.StudentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/add],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.add()
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/update]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.update(com.uas.inte.domain.VoteDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.inte.controller.VoteController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.inte.controller.VoteController.save(com.uas.inte.domain.VoteDO)
+2018-12-14 10:03:58 -Mapped "{[/inte/vote],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.Vote()
+2018-12-14 10:03:58 -Mapped "{[/inte/vote/edit/{voteId}],methods=[GET]}" onto java.lang.String com.uas.inte.controller.VoteController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/add],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.add()
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/update]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.update(com.uas.oa.domain.ApproveDO)
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/list],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.ApproveController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.ApproveController.save(com.uas.oa.domain.ApproveDO)
+2018-12-14 10:03:58 -Mapped "{[/oa/approve],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.Approve()
+2018-12-14 10:03:58 -Mapped "{[/oa/approve/edit/{approveId}],methods=[GET]}" onto java.lang.String com.uas.oa.controller.ApproveController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/add],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.add()
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/update]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.update(com.uas.oa.domain.LeaveDO)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.oa.controller.LeaveController.save(com.uas.oa.domain.LeaveDO)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/stuLeaveList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.LeaveController.stuLeaveList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/teacherLeave],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.teacherLeave()
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/teacherLeaveList],methods=[GET]}" onto public com.uas.common.utils.PageUtils com.uas.oa.controller.LeaveController.teacherLeaveList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/stuLeave],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.stuLeave()
+2018-12-14 10:03:58 -Mapped "{[/oa/leave/edit/{lvId}],methods=[GET]}" onto java.lang.String com.uas.oa.controller.LeaveController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.main()
+2018-12-14 10:03:58 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.logout()
+2018-12-14 10:03:58 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/login],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-12-14 10:03:58 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.uas.system.controller.LoginController.login()
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.update(com.uas.system.domain.MenuDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/list]}" onto java.util.List<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.MenuController.save(com.uas.system.domain.MenuDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.uas.common.domain.Tree<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.tree(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.uas.common.domain.Tree<com.uas.system.domain.MenuDO> com.uas.system.controller.MenuController.tree()
+2018-12-14 10:03:58 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.add()
+2018-12-14 10:03:58 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.update(com.uas.system.domain.RoleDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.uas.system.domain.RoleDO> com.uas.system.controller.RoleController.list()
+2018-12-14 10:03:58 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.save(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.save(com.uas.system.domain.RoleDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.role()
+2018-12-14 10:03:58 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/add/{pId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.add(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/remove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/batchRemove],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.remove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/update]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.update(com.uas.system.domain.SchoolDO)
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/list],methods=[GET]}" onto public java.util.List<com.uas.system.domain.SchoolDO> com.uas.system.controller.SchoolController.list()
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/save],methods=[POST]}" onto public com.uas.common.utils.R com.uas.system.controller.SchoolController.save(com.uas.system.domain.SchoolDO)
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/tree],methods=[GET]}" onto public com.uas.common.domain.Tree<com.uas.system.domain.SchoolDO> com.uas.system.controller.SchoolController.tree()
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.school()
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/treeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.treeView()
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/getTreeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.getTreeView()
+2018-12-14 10:03:58 -Mapped "{[/system/sysSchool/edit/{schId}],methods=[GET]}" onto java.lang.String com.uas.system.controller.SchoolController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.uas.system.domain.UserOnline> com.uas.system.controller.SessionController.list()
+2018-12-14 10:03:58 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.uas.common.utils.R com.uas.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-12-14 10:03:58 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.uas.system.controller.SessionController.sessionList()
+2018-12-14 10:03:58 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.uas.system.controller.SessionController.online()
+2018-12-14 10:03:58 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.uas.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.add(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.remove(java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/parent],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.parent(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.update(com.uas.system.domain.UserDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.save(com.uas.system.domain.UserDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-12-14 10:03:58 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.uas.common.domain.Tree<com.uas.system.domain.SchoolDO> com.uas.system.controller.UserController.tree()
+2018-12-14 10:03:58 -Mapped "{[/sys/user/employeeList],methods=[GET]}" onto com.uas.common.utils.PageUtils com.uas.system.controller.UserController.employeeList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.treeView()
+2018-12-14 10:03:58 -Mapped "{[/sys/user/employee],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.employee(org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/parentList],methods=[GET]}" onto com.uas.common.utils.PageUtils com.uas.system.controller.UserController.parentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.adminResetPwd(com.uas.system.vo.UserVO)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.updatePeronal(com.uas.system.domain.UserDO)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.uas.common.utils.R com.uas.system.controller.UserController.resetPwd(com.uas.system.vo.UserVO)
+2018-12-14 10:03:58 -Mapped "{[/sys/user/importExcel],methods=[POST]}" onto public java.lang.String com.uas.system.controller.UserController.importExcel(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2018-12-14 10:03:58 -Mapped "{[/sys/user/exportExcel]}" onto public void com.uas.system.controller.UserController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-12-14 10:03:58 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.uas.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-12-14 10:03:58 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-12-14 10:03:58 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-14 10:03:58 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-14 10:03:58 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-14 10:03:58 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-12-14 10:03:58 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-12-14 10:03:58 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-12-14 10:04:00 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62ea3440: startup date [Fri Dec 14 10:03:36 CST 2018]; root of context hierarchy
+2018-12-14 10:04:00 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 10:04:00 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 10:04:00 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 10:04:00 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-12-14 10:04:00 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-14 10:04:04 -Registering beans for JMX exposure on startup
+2018-12-14 10:04:04 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-12-14 10:04:04 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-12-14 10:04:04 -Starting beans in phase 2147483647
+2018-12-14 10:04:04 -Context refreshed
+2018-12-14 10:04:04 -Found 1 custom documentation plugin(s)
+2018-12-14 10:04:04 -Scanning for api listing references
+2018-12-14 10:04:04 -Generating unique operation named: removeUsingPOST_1
+2018-12-14 10:04:04 -Generating unique operation named: addUsingGET_1
+2018-12-14 10:04:04 -Generating unique operation named: editUsingGET_1
+2018-12-14 10:04:04 -Generating unique operation named: listUsingGET_1
+2018-12-14 10:04:04 -Generating unique operation named: removeUsingPOST_2
+2018-12-14 10:04:04 -Generating unique operation named: removeUsingPOST_3
+2018-12-14 10:04:04 -Generating unique operation named: saveUsingPOST_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingGET_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingHEAD_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingPOST_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingPUT_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingPATCH_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingDELETE_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingOPTIONS_1
+2018-12-14 10:04:04 -Generating unique operation named: updateUsingTRACE_1
+2018-12-14 10:04:04 -Generating unique operation named: addUsingGET_2
+2018-12-14 10:04:04 -Generating unique operation named: editUsingGET_2
+2018-12-14 10:04:04 -Generating unique operation named: listUsingGET_2
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_4
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_5
+2018-12-14 10:04:05 -Generating unique operation named: saveUsingPOST_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingGET_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingHEAD_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPOST_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPUT_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPATCH_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingDELETE_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingOPTIONS_2
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingTRACE_2
+2018-12-14 10:04:05 -Generating unique operation named: editUsingGET_3
+2018-12-14 10:04:05 -Generating unique operation named: listUsingGET_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPOST_3
+2018-12-14 10:04:05 -Generating unique operation named: addUsingGET_3
+2018-12-14 10:04:05 -Generating unique operation named: editUsingGET_4
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_6
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_7
+2018-12-14 10:04:05 -Generating unique operation named: saveUsingPOST_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingGET_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingHEAD_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPOST_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPUT_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPATCH_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingDELETE_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingOPTIONS_3
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingTRACE_3
+2018-12-14 10:04:05 -Generating unique operation named: addUsingGET_4
+2018-12-14 10:04:05 -Generating unique operation named: editUsingGET_5
+2018-12-14 10:04:05 -Generating unique operation named: listUsingGET_4
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_8
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_9
+2018-12-14 10:04:05 -Generating unique operation named: saveUsingPOST_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingGET_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingHEAD_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPOST_5
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPUT_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingPATCH_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingDELETE_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingOPTIONS_4
+2018-12-14 10:04:05 -Generating unique operation named: updateUsingTRACE_4
+2018-12-14 10:04:05 -Generating unique operation named: listUsingGET_5
+2018-12-14 10:04:05 -Generating unique operation named: removeUsingPOST_10
+2018-12-14 10:04:05 -Generating unique operation named: welcomeUsingGET_1
+2018-12-14 10:04:05 -Generating unique operation named: addUsingGET_5
+2018-12-14 10:04:05 -Generating unique operation named: editUsingGET_6
+2018-12-14 10:04:05 -Generating unique operation named: listUsingGET_6
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_11
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_5
+2018-12-14 10:04:06 -Generating unique operation named: treeUsingGET_1
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_6
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_6
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_7
+2018-12-14 10:04:06 -Generating unique operation named: listUsingGET_7
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_12
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_13
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingGET_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingHEAD_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPUT_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPATCH_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingDELETE_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingOPTIONS_5
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingTRACE_5
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_7
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_8
+2018-12-14 10:04:06 -Generating unique operation named: listUsingGET_8
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_14
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_15
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingGET_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingHEAD_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPUT_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPATCH_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingDELETE_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingOPTIONS_6
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingTRACE_6
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_8
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_9
+2018-12-14 10:04:06 -Generating unique operation named: listUsingGET_9
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_16
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_17
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingGET_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingHEAD_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_9
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPUT_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPATCH_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingDELETE_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingOPTIONS_7
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingTRACE_7
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_9
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_10
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_18
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_19
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_9
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingGET_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingHEAD_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_10
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPUT_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPATCH_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingDELETE_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingOPTIONS_8
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingTRACE_8
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_10
+2018-12-14 10:04:06 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_11
+2018-12-14 10:04:06 -Generating unique operation named: listUsingGET_10
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_10
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_11
+2018-12-14 10:04:06 -Generating unique operation named: updateUsingPOST_11
+2018-12-14 10:04:06 -Generating unique operation named: addUsingGET_11
+2018-12-14 10:04:06 -Generating unique operation named: editUsingGET_12
+2018-12-14 10:04:06 -Generating unique operation named: listUsingGET_11
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_20
+2018-12-14 10:04:06 -Generating unique operation named: removeUsingPOST_21
+2018-12-14 10:04:06 -Generating unique operation named: saveUsingPOST_12
+2018-12-14 10:04:07 -Generating unique operation named: treeUsingGET_2
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingGET_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingHEAD_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPOST_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPUT_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPATCH_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingDELETE_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingOPTIONS_9
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingTRACE_9
+2018-12-14 10:04:07 -Generating unique operation named: addUsingGET_12
+2018-12-14 10:04:07 -Generating unique operation named: editUsingGET_13
+2018-12-14 10:04:07 -Generating unique operation named: listUsingGET_12
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_22
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_23
+2018-12-14 10:04:07 -Generating unique operation named: saveUsingPOST_13
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingGET_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingHEAD_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPOST_13
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPUT_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPATCH_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingDELETE_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingOPTIONS_10
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingTRACE_10
+2018-12-14 10:04:07 -Generating unique operation named: listUsingGET_13
+2018-12-14 10:04:07 -Generating unique operation named: listUsingHEAD_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingPOST_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingPUT_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingPATCH_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingDELETE_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingOPTIONS_1
+2018-12-14 10:04:07 -Generating unique operation named: listUsingTRACE_1
+2018-12-14 10:04:07 -Generating unique operation named: addUsingGET_13
+2018-12-14 10:04:07 -Generating unique operation named: editUsingGET_14
+2018-12-14 10:04:07 -Generating unique operation named: listUsingGET_14
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_24
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_25
+2018-12-14 10:04:07 -Generating unique operation named: saveUsingPOST_14
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingGET_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingHEAD_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPOST_14
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPUT_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPATCH_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingDELETE_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingOPTIONS_11
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingTRACE_11
+2018-12-14 10:04:07 -Generating unique operation named: addUsingGET_14
+2018-12-14 10:04:07 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-12-14 10:04:07 -Generating unique operation named: editUsingGET_15
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_26
+2018-12-14 10:04:07 -Generating unique operation named: saveUsingPOST_15
+2018-12-14 10:04:07 -Generating unique operation named: treeUsingGET_3
+2018-12-14 10:04:07 -Generating unique operation named: treeViewUsingGET_1
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPOST_15
+2018-12-14 10:04:07 -Generating unique operation named: addUsingGET_15
+2018-12-14 10:04:07 -Generating unique operation named: editUsingGET_16
+2018-12-14 10:04:07 -Generating unique operation named: listUsingGET_15
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_27
+2018-12-14 10:04:07 -Generating unique operation named: removeUsingPOST_28
+2018-12-14 10:04:07 -Generating unique operation named: saveUsingPOST_16
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingGET_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingHEAD_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPOST_16
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPUT_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingPATCH_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingDELETE_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingOPTIONS_12
+2018-12-14 10:04:07 -Generating unique operation named: updateUsingTRACE_12
+2018-12-14 10:04:08 -Starting...
+2018-12-14 10:04:08 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-12-14 10:04:08 -Started.
+2018-12-14 10:04:08 -Initializing ProtocolHandler ["http-nio-8011"]
+2018-12-14 10:04:08 -Starting ProtocolHandler ["http-nio-8011"]
+2018-12-14 10:04:08 -Using a shared selector for servlet write/read
+2018-12-14 10:04:08 -Tomcat started on port(s): 8011 (http)
+2018-12-14 10:04:08 -Started InteApplication in 34.035 seconds (JVM running for 38.959)
+2018-12-14 10:04:16 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-14 10:04:16 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-14 10:04:16 -FrameworkServlet 'dispatcherServlet': initialization completed in 251 ms
+2018-12-14 10:04:16 -Enabling session validation scheduler...
+2018-12-14 10:04:17 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 10:04:17 -HTTP METHOD : GET
+2018-12-14 10:04:17 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:04:17 -参数 : []
+2018-12-14 10:04:17 -耗时 : 5
+2018-12-14 10:04:17 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-12-14 10:04:17 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-12-14 10:04:17 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-12-14 10:04:17 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-12-14 10:04:17 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-12-14 10:04:17 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-12-14 10:04:17 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-12-14 10:04:58 -WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannelpool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2018-12-14 10:06:11 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 10:06:11 -HTTP METHOD : GET
+2018-12-14 10:06:11 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:06:11 -参数 : []
+2018-12-14 10:06:11 -耗时 : 1
+2018-12-14 10:06:25 -请求地址 : http://localhost:8011//integral/login
+2018-12-14 10:06:25 -HTTP METHOD : GET
+2018-12-14 10:06:25 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:06:25 -参数 : []
+2018-12-14 10:06:25 -耗时 : 1
+2018-12-14 10:07:21 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:07:21 -HTTP METHOD : GET
+2018-12-14 10:07:21 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:07:21 -参数 : []
+2018-12-14 10:07:21 -耗时 : 1
+2018-12-14 10:07:26 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:07:26 -HTTP METHOD : POST
+2018-12-14 10:07:26 -CLASS_METHOD : com.uas.system.controller.LoginController.ajaxLogin
+2018-12-14 10:07:26 -参数 : [admin, 111111]
+2018-12-14 10:07:27 -耗时 : 1811
+2018-12-14 10:07:28 -请求地址 : http://localhost:8011/integral/index
+2018-12-14 10:07:28 -HTTP METHOD : GET
+2018-12-14 10:07:28 -CLASS_METHOD : com.uas.system.controller.LoginController.index
+2018-12-14 10:07:28 -参数 : [{}]
+2018-12-14 10:07:28 -耗时 : 66
+2018-12-14 10:07:28 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:07:28 -HTTP METHOD : GET
+2018-12-14 10:07:28 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:07:28 -参数 : []
+2018-12-14 10:07:28 -耗时 : 1
+2018-12-14 10:07:29 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:07:29 -HTTP METHOD : GET
+2018-12-14 10:07:29 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:07:29 -参数 : []
+2018-12-14 10:07:29 -耗时 : 0
+2018-12-14 10:07:43 -请求地址 : http://localhost:8011/integral/sys/user/employee
+2018-12-14 10:07:43 -HTTP METHOD : GET
+2018-12-14 10:07:43 -CLASS_METHOD : com.uas.system.controller.UserController.employee
+2018-12-14 10:07:43 -参数 : [{}]
+2018-12-14 10:07:43 -耗时 : 1
+2018-12-14 10:07:44 -请求地址 : http://localhost:8011/integral//sys/user/employeeList
+2018-12-14 10:07:44 -HTTP METHOD : GET
+2018-12-14 10:07:44 -CLASS_METHOD : com.uas.system.controller.UserController.employeeList
+2018-12-14 10:07:44 -参数 : [{limit=10, offset=0, name=}]
+2018-12-14 10:07:44 -耗时 : 74
+2018-12-14 10:07:56 -请求地址 : http://localhost:8011/integral/sys/menu
+2018-12-14 10:07:56 -HTTP METHOD : GET
+2018-12-14 10:07:56 -CLASS_METHOD : com.uas.system.controller.MenuController.menu
+2018-12-14 10:07:56 -参数 : [{}]
+2018-12-14 10:07:56 -耗时 : 1
+2018-12-14 10:07:57 -请求地址 : http://localhost:8011/integral//sys/menu/list
+2018-12-14 10:07:57 -HTTP METHOD : GET
+2018-12-14 10:07:57 -CLASS_METHOD : com.uas.system.controller.MenuController.list
+2018-12-14 10:07:57 -参数 : [{sort=order_num}]
+2018-12-14 10:07:57 -耗时 : 55
+2018-12-14 10:08:07 -请求地址 : http://localhost:8011/integral//sys/menu/add/46
+2018-12-14 10:08:07 -HTTP METHOD : GET
+2018-12-14 10:08:07 -CLASS_METHOD : com.uas.system.controller.MenuController.add
+2018-12-14 10:08:07 -参数 : [{}, 46]
+2018-12-14 10:08:07 -耗时 : 20
+2018-12-14 10:09:52 -请求地址 : http://localhost:8011/integral//sys/menu/save
+2018-12-14 10:09:52 -HTTP METHOD : POST
+2018-12-14 10:09:52 -CLASS_METHOD : com.uas.system.controller.MenuController.save
+2018-12-14 10:09:52 -参数 : [MenuDO{menuId=null, parentId=46, menuName='家长信息', menuUrl='sys/user/parent', menuPerms='sys:user:user', menuType=1, menuIcon='fa fa-user', orderNum=0, creatDate=null}]
+2018-12-14 10:09:52 -耗时 : 15
+2018-12-14 10:09:52 -请求地址 : http://localhost:8011/integral//sys/menu/list
+2018-12-14 10:09:52 -HTTP METHOD : GET
+2018-12-14 10:09:52 -CLASS_METHOD : com.uas.system.controller.MenuController.list
+2018-12-14 10:09:52 -参数 : [{sort=order_num}]
+2018-12-14 10:09:52 -耗时 : 20
+2018-12-14 10:09:57 -请求地址 : http://localhost:8011/integral/
+2018-12-14 10:09:57 -HTTP METHOD : GET
+2018-12-14 10:09:57 -CLASS_METHOD : com.uas.system.controller.LoginController.welcome
+2018-12-14 10:09:57 -参数 : [{}]
+2018-12-14 10:09:57 -耗时 : 1
+2018-12-14 10:09:57 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:09:57 -HTTP METHOD : GET
+2018-12-14 10:09:57 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:09:57 -参数 : []
+2018-12-14 10:09:57 -耗时 : 1
+2018-12-14 10:09:59 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:09:59 -HTTP METHOD : POST
+2018-12-14 10:09:59 -CLASS_METHOD : com.uas.system.controller.LoginController.ajaxLogin
+2018-12-14 10:09:59 -参数 : [admin, 111111]
+2018-12-14 10:09:59 -耗时 : 6
+2018-12-14 10:10:00 -请求地址 : http://localhost:8011/integral/index
+2018-12-14 10:10:00 -HTTP METHOD : GET
+2018-12-14 10:10:00 -CLASS_METHOD : com.uas.system.controller.LoginController.index
+2018-12-14 10:10:00 -参数 : [{}]
+2018-12-14 10:10:00 -耗时 : 11
+2018-12-14 10:10:00 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:10:00 -HTTP METHOD : GET
+2018-12-14 10:10:00 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:10:00 -参数 : []
+2018-12-14 10:10:00 -耗时 : 0
+2018-12-14 10:10:00 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:10:00 -HTTP METHOD : GET
+2018-12-14 10:10:00 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:10:00 -参数 : []
+2018-12-14 10:10:00 -耗时 : 12
+2018-12-14 10:10:06 -请求地址 : http://localhost:8011/integral/sys/role
+2018-12-14 10:10:06 -HTTP METHOD : GET
+2018-12-14 10:10:06 -CLASS_METHOD : com.uas.system.controller.RoleController.role
+2018-12-14 10:10:06 -参数 : []
+2018-12-14 10:10:06 -耗时 : 1
+2018-12-14 10:10:06 -请求地址 : http://localhost:8011/integral//sys/role/list
+2018-12-14 10:10:06 -HTTP METHOD : GET
+2018-12-14 10:10:06 -CLASS_METHOD : com.uas.system.controller.RoleController.list
+2018-12-14 10:10:06 -参数 : []
+2018-12-14 10:10:06 -耗时 : 7
+2018-12-14 10:10:09 -请求地址 : http://localhost:8011/integral//sys/role/edit/5
+2018-12-14 10:10:09 -HTTP METHOD : GET
+2018-12-14 10:10:09 -CLASS_METHOD : com.uas.system.controller.RoleController.edit
+2018-12-14 10:10:09 -参数 : [5, {}]
+2018-12-14 10:10:09 -耗时 : 11
+2018-12-14 10:10:10 -请求地址 : http://localhost:8011/integral//sys/menu/tree/5
+2018-12-14 10:10:10 -HTTP METHOD : GET
+2018-12-14 10:10:10 -CLASS_METHOD : com.uas.system.controller.MenuController.tree
+2018-12-14 10:10:10 -参数 : [5]
+2018-12-14 10:10:10 -耗时 : 26
+2018-12-14 10:10:14 -请求地址 : http://localhost:8011/integral//sys/role/update
+2018-12-14 10:10:14 -HTTP METHOD : POST
+2018-12-14 10:10:14 -CLASS_METHOD : com.uas.system.controller.RoleController.update
+2018-12-14 10:10:14 -参数 : [RoleDO{roleId=5, roleName='超级用户角色', roleSign='admin', creatDate='null, roleRemarks=拥有最高权限', menuIds=[81, 80, 79, 78, 76, 75, 73, 72, 65, 64, 63, 61, 60, 57, 56, 55, 54, 53, 51, 50, 49, 48, 83, 45, 44, 42, 41, 39, 38, 37, 36, 35, 32, 30, 29, 28, 27, 25, 24, 23, 22, 20, 19, 18, 6, 69, 68, 67, 17, 16, 15, 14, 11, 9, 8, 1, 77, 71, 82, 59, 58, 52, 47, 40, 34, 33, 31, 26, 21, 5, 4, 3, 66, 13, 7, 2, -1, 84, 46]}]
+2018-12-14 10:10:14 -耗时 : 86
+2018-12-14 10:10:14 -请求地址 : http://localhost:8011/integral//sys/role/list
+2018-12-14 10:10:14 -HTTP METHOD : GET
+2018-12-14 10:10:14 -CLASS_METHOD : com.uas.system.controller.RoleController.list
+2018-12-14 10:10:14 -参数 : []
+2018-12-14 10:10:14 -耗时 : 6
+2018-12-14 10:10:16 -请求地址 : http://localhost:8011/integral/
+2018-12-14 10:10:16 -HTTP METHOD : GET
+2018-12-14 10:10:16 -CLASS_METHOD : com.uas.system.controller.LoginController.welcome
+2018-12-14 10:10:16 -参数 : [{}]
+2018-12-14 10:10:16 -耗时 : 0
+2018-12-14 10:10:16 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:10:16 -HTTP METHOD : GET
+2018-12-14 10:10:16 -CLASS_METHOD : com.uas.system.controller.LoginController.login
+2018-12-14 10:10:16 -参数 : []
+2018-12-14 10:10:16 -耗时 : 1
+2018-12-14 10:10:17 -请求地址 : http://localhost:8011/integral/login
+2018-12-14 10:10:17 -HTTP METHOD : POST
+2018-12-14 10:10:17 -CLASS_METHOD : com.uas.system.controller.LoginController.ajaxLogin
+2018-12-14 10:10:17 -参数 : [admin, 111111]
+2018-12-14 10:10:17 -耗时 : 6
+2018-12-14 10:10:17 -请求地址 : http://localhost:8011/integral/index
+2018-12-14 10:10:17 -HTTP METHOD : GET
+2018-12-14 10:10:17 -CLASS_METHOD : com.uas.system.controller.LoginController.index
+2018-12-14 10:10:17 -参数 : [{}]
+2018-12-14 10:10:17 -耗时 : 10
+2018-12-14 10:10:18 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:10:18 -HTTP METHOD : GET
+2018-12-14 10:10:18 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:10:18 -参数 : []
+2018-12-14 10:10:18 -耗时 : 0
+2018-12-14 10:10:18 -请求地址 : http://localhost:8011/integral/main
+2018-12-14 10:10:18 -HTTP METHOD : GET
+2018-12-14 10:10:18 -CLASS_METHOD : com.uas.system.controller.LoginController.main
+2018-12-14 10:10:18 -参数 : []
+2018-12-14 10:10:18 -耗时 : 2
+2018-12-14 10:10:20 -请求地址 : http://localhost:8011/integral/sys/user/parent
+2018-12-14 10:10:20 -HTTP METHOD : GET
+2018-12-14 10:10:20 -CLASS_METHOD : com.uas.system.controller.UserController.parent
+2018-12-14 10:10:20 -参数 : [{}]
+2018-12-14 10:10:20 -耗时 : 1
+2018-12-14 10:10:21 -请求地址 : http://localhost:8011/integral//sys/user/parentList
+2018-12-14 10:10:21 -HTTP METHOD : GET
+2018-12-14 10:10:21 -CLASS_METHOD : com.uas.system.controller.UserController.parentList
+2018-12-14 10:10:21 -参数 : [{limit=10, offset=0, name=}]
+2018-12-14 10:10:21 -耗时 : 35
+2018-12-14 10:14:04 -请求地址 : http://localhost:8011/integral/sys/user/parent
+2018-12-14 10:14:04 -HTTP METHOD : GET
+2018-12-14 10:14:04 -CLASS_METHOD : com.uas.system.controller.UserController.parent
+2018-12-14 10:14:04 -参数 : [{}]
+2018-12-14 10:14:04 -耗时 : 1
+2018-12-14 10:14:05 -请求地址 : http://localhost:8011/integral//sys/user/parentList
+2018-12-14 10:14:05 -HTTP METHOD : GET
+2018-12-14 10:14:05 -CLASS_METHOD : com.uas.system.controller.UserController.parentList
+2018-12-14 10:14:05 -参数 : [{limit=10, offset=0, name=}]
+2018-12-14 10:14:05 -耗时 : 33

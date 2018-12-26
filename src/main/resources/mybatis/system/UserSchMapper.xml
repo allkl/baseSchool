@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.system.dao.UserSchDao">
+
+	<select id="get" resultType="com.uas.system.domain.UserSchDO">
+		select `user_sch_id`,`sch_id`,`user_id` from user_sch where user_sch_id = #{value}
+	</select>
+
+	<select id="getSchId" resultType="com.uas.system.domain.UserSchDO">
+		select `user_sch_id`,`sch_id`,`user_id` from user_sch where user_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.system.domain.UserSchDO">
+		select `user_sch_id`,`sch_id`,`user_id` from user_sch
+        <where>  
+		  		  <if test="userSchId != null and userSchId != ''"> and user_sch_id = #{userSchId} </if>
+		  		  <if test="schId != null and schId != ''"> and sch_id = #{schId} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by user_sch_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from user_sch
+		 <where>  
+		  		  <if test="userSchId != null and userSchId != ''"> and user_sch_id = #{userSchId} </if>
+		  		  <if test="schId != null and schId != ''"> and sch_id = #{schId} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.system.domain.UserSchDO" useGeneratedKeys="true" keyProperty="userSchId">
+		insert into user_sch
+		(
+			`sch_id`, 
+			`user_id`
+		)
+		values
+		(
+			#{schId}, 
+			#{userId}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.system.domain.UserSchDO">
+		update user_sch 
+		<set>
+			<if test="schId != null">`sch_id` = #{schId}, </if>
+			<if test="userId != null">`user_id` = #{userId}</if>
+		</set>
+		where user_sch_id = #{userSchId}
+	</update>
+	
+	<delete id="remove">
+		delete from user_sch where user_sch_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from user_sch where user_sch_id in 
+		<foreach item="userSchId" collection="array" open="(" separator="," close=")">
+			#{userSchId}
+		</foreach>
+	</delete>
+
+	<insert id="batchSave">
+		INSERT INTO user_sch(sch_id, user_id) values
+		<foreach item="item" index="index" collection="list" separator=",">
+			(#{item.schId},#{item.userId})
+		</foreach>
+	</insert>
+
+	<delete id="removeByUserId">
+		delete from user_sch where user_id=#{userId}
+	</delete>
+
+	<delete id="batchRemoveByUserId">
+		delete from user_sch where user_id in
+		<foreach item="ids" collection="array" open="(" separator="," close=")">
+			#{ids}
+		</foreach>
+	</delete>
+
+</mapper>

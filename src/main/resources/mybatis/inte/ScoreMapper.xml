@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.ScoreDao">
+
+	<select id="get" resultType="com.uas.inte.domain.ScoreDO">
+		select `score_id`,`score_type`,`score_name`,`stu_id`,`score_total`,`score_date`,`score_remarks` from score where score_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.inte.domain.ScoreDO">
+		select sr.score_id,sr.score_type,sr.score_name,sr.stu_id,sr.score_total,sr.score_date,sr.score_remarks,stu.stu_name,sch.sch_name,sch.sch_id from score sr left join student stu
+		on stu.stu_id=sr.stu_id left join school sch on sch.sch_id=stu.sch_id
+        <where>
+			      <if test="schId != null and schId != ''"> and sch.sch_id = #{schId} </if>
+		  		  <if test="scoreId != null and scoreId != ''"> and score_id = #{scoreId} </if>
+		  		  <if test="scoreType != null and scoreType != ''"> and score_type = #{scoreType} </if>
+		  		  <if test="scoreName != null and scoreName != ''"> and score_name = #{scoreName} </if>
+		  		  <if test="stuId != null and stuId != ''"> and sr.stu_id = #{stuId} </if>
+		  		  <if test="scoreTotal != null and scoreTotal != ''"> and score_total = #{scoreTotal} </if>
+		  		  <if test="scoreDate != null and scoreDate != ''"> and score_date = #{scoreDate} </if>
+		  		  <if test="scoreRemarks != null and scoreRemarks != ''"> and score_remarks = #{scoreRemarks} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by sr.score_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from score
+		 <where>  
+		  		  <if test="scoreId != null and scoreId != ''"> and score_id = #{scoreId} </if>
+		  		  <if test="scoreType != null and scoreType != ''"> and score_type = #{scoreType} </if>
+		  		  <if test="scoreName != null and scoreName != ''"> and score_name = #{scoreName} </if>
+		  		  <if test="stuId != null and stuId != ''"> and stu_id = #{stuId} </if>
+		  		  <if test="scoreTotal != null and scoreTotal != ''"> and score_total = #{scoreTotal} </if>
+		  		  <if test="scoreDate != null and scoreDate != ''"> and score_date = #{scoreDate} </if>
+		  		  <if test="scoreRemarks != null and scoreRemarks != ''"> and score_remarks = #{scoreRemarks} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.inte.domain.ScoreDO" useGeneratedKeys="true" keyProperty="scoreId">
+		insert into score
+		(
+			`score_type`, 
+			`score_name`, 
+			`stu_id`, 
+			`score_total`, 
+			`score_date`, 
+			`score_remarks`
+		)
+		values
+		(
+			#{scoreType}, 
+			#{scoreName}, 
+			#{stuId}, 
+			#{scoreTotal}, 
+			#{scoreDate}, 
+			#{scoreRemarks}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.inte.domain.ScoreDO">
+		update score 
+		<set>
+			<if test="scoreType != null">`score_type` = #{scoreType}, </if>
+			<if test="scoreName != null">`score_name` = #{scoreName}, </if>
+			<if test="stuId != null">`stu_id` = #{stuId}, </if>
+			<if test="scoreTotal != null">`score_total` = #{scoreTotal}, </if>
+			<if test="scoreDate != null">`score_date` = #{scoreDate}, </if>
+			<if test="scoreRemarks != null">`score_remarks` = #{scoreRemarks}</if>
+		</set>
+		where score_id = #{scoreId}
+	</update>
+	
+	<delete id="remove">
+		delete from score where score_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from score where score_id in 
+		<foreach item="scoreId" collection="array" open="(" separator="," close=")">
+			#{scoreId}
+		</foreach>
+	</delete>
+
+</mapper>

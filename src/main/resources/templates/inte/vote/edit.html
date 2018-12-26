@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <form class="form-horizontal m-t" id="signupForm">
+                        <input id="voteId" name="voteId" th:value="${vote.voteId}" type="hidden">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">名称：</label>
+                            <div class="col-sm-8">
+                                <input id="voteName" name="voteName" th:value="${vote.voteName}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">类型 1投票 2反馈 3问卷调查：</label>
+                            <div class="col-sm-8">
+                                <input id="voteType" name="voteType" th:value="${vote.voteType}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">创建人：</label>
+                            <div class="col-sm-8">
+                                <input id="creator" name="creator" th:value="${vote.creator}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">创建时间：</label>
+                            <div class="col-sm-8">
+                                <input id="creatDate" name="creatDate" th:value="${vote.creatDate}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">投票时间：</label>
+                            <div class="col-sm-8">
+                                <input id="voteDate" name="voteDate" th:value="${vote.voteDate}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">投票人：</label>
+                            <div class="col-sm-8">
+                                <input id="voter" name="voter" th:value="${vote.voter}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">附件：</label>
+                            <div class="col-sm-8">
+                                <input id="voteFile" name="voteFile" th:value="${vote.voteFile}" class="form-control"
+                                       type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">备注：</label>
+                            <div class="col-sm-8">
+                                <input id="voteRemarks" name="voteRemarks" th:value="${vote.voteRemarks}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">状态 1使用 2闲置：</label>
+                            <div class="col-sm-8">
+                                <input id="voteStatus" name="voteStatus" th:value="${vote.voteStatus}"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-8 col-sm-offset-3">
+                                <button type="submit" class="btn btn-primary">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="include::footer"></div>
+<script type="text/javascript" src="/js/appjs/inte/vote/edit.js" th:src="@{/js/appjs/inte/vote/edit.js}">
+</script>
+</body>
+</html>

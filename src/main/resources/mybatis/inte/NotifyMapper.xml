@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.NotifyDao">
+
+	<select id="get" resultType="com.uas.inte.domain.NotifyDO">
+		select `notify_id`,`notify_name`,`notify_type`,`notify_details`,`notify_files`,`notify_creator`,`notify_address`,`creat_date`,`start_date`,`end_date`,`reminder_date`,`notify_status`,`notify_remarks` from notify where notify_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.inte.domain.NotifyDO">
+		select `notify_id`,`notify_name`,`notify_type`,`notify_details`,`notify_files`,`notify_creator`,`notify_address`,`creat_date`,`start_date`,`end_date`,`reminder_date`,`notify_status`,`notify_remarks` from notify
+        <where>  
+		  		  <if test="notifyId != null and notifyId != ''"> and notify_id = #{notifyId} </if>
+		  		  <if test="notifyName != null and notifyName != ''"> and notify_name = #{notifyName} </if>
+		  		  <if test="notifyType != null and notifyType != ''"> and notify_type = #{notifyType} </if>
+		  		  <if test="notifyDetails != null and notifyDetails != ''"> and notify_details = #{notifyDetails} </if>
+		  		  <if test="notifyFiles != null and notifyFiles != ''"> and notify_files = #{notifyFiles} </if>
+		  		  <if test="notifyCreator != null and notifyCreator != ''"> and notify_creator = #{notifyCreator} </if>
+		  		  <if test="notifyAddress != null and notifyAddress != ''"> and notify_address = #{notifyAddress} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="startDate != null and startDate != ''"> and start_date = #{startDate} </if>
+		  		  <if test="endDate != null and endDate != ''"> and end_date = #{endDate} </if>
+		  		  <if test="reminderDate != null and reminderDate != ''"> and reminder_date = #{reminderDate} </if>
+		  		  <if test="notifyStatus != null and notifyStatus != ''"> and notify_status = #{notifyStatus} </if>
+		  		  <if test="notifyRemarks != null and notifyRemarks != ''"> and notify_remarks = #{notifyRemarks} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by notify_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+
+	<select id="headmasterMessageList" resultType="com.uas.inte.domain.NotifyDO">
+		select `notify_id`,`notify_name`,`notify_type`,`notify_details`,`notify_files`,`notify_creator`,`notify_address`,`creat_date`,`start_date`,`end_date`,`reminder_date`,`notify_status`,`notify_remarks` from notify
+		<where>
+			notify_type = 5
+			<if test="notifyId != null and notifyId != ''"> and notify_id = #{notifyId} </if>
+			<if test="notifyName != null and notifyName != ''"> and notify_name = #{notifyName} </if>
+			<if test="notifyDetails != null and notifyDetails != ''"> and notify_details = #{notifyDetails} </if>
+			<if test="notifyFiles != null and notifyFiles != ''"> and notify_files = #{notifyFiles} </if>
+			<if test="notifyCreator != null and notifyCreator != ''"> and notify_creator = #{notifyCreator} </if>
+			<if test="notifyAddress != null and notifyAddress != ''"> and notify_address = #{notifyAddress} </if>
+			<if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+			<if test="startDate != null and startDate != ''"> and start_date = #{startDate} </if>
+			<if test="endDate != null and endDate != ''"> and end_date = #{endDate} </if>
+			<if test="reminderDate != null and reminderDate != ''"> and reminder_date = #{reminderDate} </if>
+			<if test="notifyStatus != null and notifyStatus != ''"> and notify_status = #{notifyStatus} </if>
+			<if test="notifyRemarks != null and notifyRemarks != ''"> and notify_remarks = #{notifyRemarks} </if>
+		</where>
+		<choose>
+			<when test="sort != null and sort.trim() != ''">
+				order by ${sort} ${order}
+			</when>
+			<otherwise>
+				order by notify_id desc
+			</otherwise>
+		</choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from notify
+		 <where>  
+		  		  <if test="notifyId != null and notifyId != ''"> and notify_id = #{notifyId} </if>
+		  		  <if test="notifyName != null and notifyName != ''"> and notify_name = #{notifyName} </if>
+		  		  <if test="notifyType != null and notifyType != ''"> and notify_type = #{notifyType} </if>
+		  		  <if test="notifyDetails != null and notifyDetails != ''"> and notify_details = #{notifyDetails} </if>
+		  		  <if test="notifyFiles != null and notifyFiles != ''"> and notify_files = #{notifyFiles} </if>
+		  		  <if test="notifyCreator != null and notifyCreator != ''"> and notify_creator = #{notifyCreator} </if>
+		  		  <if test="notifyAddress != null and notifyAddress != ''"> and notify_address = #{notifyAddress} </if>
+		  		  <if test="creatDate != null and creatDate != ''"> and creat_date = #{creatDate} </if>
+		  		  <if test="startDate != null and startDate != ''"> and start_date = #{startDate} </if>
+		  		  <if test="endDate != null and endDate != ''"> and end_date = #{endDate} </if>
+		  		  <if test="reminderDate != null and reminderDate != ''"> and reminder_date = #{reminderDate} </if>
+		  		  <if test="notifyStatus != null and notifyStatus != ''"> and notify_status = #{notifyStatus} </if>
+		  		  <if test="notifyRemarks != null and notifyRemarks != ''"> and notify_remarks = #{notifyRemarks} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.inte.domain.NotifyDO" useGeneratedKeys="true" keyProperty="notifyId">
+		insert into notify
+		(
+			`notify_name`, 
+			`notify_type`, 
+			`notify_details`, 
+			`notify_files`, 
+			`notify_creator`, 
+			`notify_address`, 
+			`creat_date`, 
+			`start_date`, 
+			`end_date`, 
+			`reminder_date`, 
+			`notify_status`, 
+			`notify_remarks`
+		)
+		values
+		(
+			#{notifyName}, 
+			#{notifyType}, 
+			#{notifyDetails}, 
+			#{notifyFiles}, 
+			#{notifyCreator}, 
+			#{notifyAddress}, 
+			#{creatDate}, 
+			#{startDate}, 
+			#{endDate}, 
+			#{reminderDate}, 
+			#{notifyStatus}, 
+			#{notifyRemarks}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.inte.domain.NotifyDO">
+		update notify 
+		<set>
+			<if test="notifyName != null">`notify_name` = #{notifyName}, </if>
+			<if test="notifyType != null">`notify_type` = #{notifyType}, </if>
+			<if test="notifyDetails != null">`notify_details` = #{notifyDetails}, </if>
+			<if test="notifyFiles != null">`notify_files` = #{notifyFiles}, </if>
+			<if test="notifyCreator != null">`notify_creator` = #{notifyCreator}, </if>
+			<if test="notifyAddress != null">`notify_address` = #{notifyAddress}, </if>
+			<if test="creatDate != null">`creat_date` = #{creatDate}, </if>
+			<if test="startDate != null">`start_date` = #{startDate}, </if>
+			<if test="endDate != null">`end_date` = #{endDate}, </if>
+			<if test="reminderDate != null">`reminder_date` = #{reminderDate}, </if>
+			<if test="notifyStatus != null">`notify_status` = #{notifyStatus}, </if>
+			<if test="notifyRemarks != null">`notify_remarks` = #{notifyRemarks}</if>
+		</set>
+		where notify_id = #{notifyId}
+	</update>
+	
+	<delete id="remove">
+		delete from notify where notify_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from notify where notify_id in 
+		<foreach item="notifyId" collection="array" open="(" separator="," close=")">
+			#{notifyId}
+		</foreach>
+	</delete>
+
+</mapper>

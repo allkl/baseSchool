@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uas.inte.dao.PaymentDao">
+
+	<select id="get" resultType="com.uas.inte.domain.PaymentDO">
+		select `stu_payment_id`,`stu_id`,`user_id`,`pay_id`,`pay_type`,`status`,`pay_date`,`remarks` from user_payment where stu_payment_id = #{value}
+	</select>
+
+	<select id="list" resultType="com.uas.inte.domain.PaymentDO">
+		select `stu_payment_id`,`stu_id`,`user_id`,`pay_id`,`pay_type`,`status`,`pay_date`,`remarks` from user_payment
+        <where>  
+		  		  <if test="stuPaymentId != null and stuPaymentId != ''"> and stu_payment_id = #{stuPaymentId} </if>
+		  		  <if test="stuId != null and stuId != ''"> and stu_id = #{stuId} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		  <if test="payId != null and payId != ''"> and pay_id = #{payId} </if>
+		  		  <if test="payType != null and payType != ''"> and pay_type = #{payType} </if>
+		  		  <if test="status != null and status != ''"> and status = #{status} </if>
+		  		  <if test="payDate != null and payDate != ''"> and pay_date = #{payDate} </if>
+		  		  <if test="remarks != null and remarks != ''"> and remarks = #{remarks} </if>
+		  		</where>
+        <choose>
+            <when test="sort != null and sort.trim() != ''">
+                order by ${sort} ${order}
+            </when>
+			<otherwise>
+                order by stu_payment_id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="count" resultType="int">
+		select count(*) from user_payment
+		 <where>  
+		  		  <if test="stuPaymentId != null and stuPaymentId != ''"> and stu_payment_id = #{stuPaymentId} </if>
+		  		  <if test="stuId != null and stuId != ''"> and stu_id = #{stuId} </if>
+		  		  <if test="userId != null and userId != ''"> and user_id = #{userId} </if>
+		  		  <if test="payId != null and payId != ''"> and pay_id = #{payId} </if>
+		  		  <if test="payType != null and payType != ''"> and pay_type = #{payType} </if>
+		  		  <if test="status != null and status != ''"> and status = #{status} </if>
+		  		  <if test="payDate != null and payDate != ''"> and pay_date = #{payDate} </if>
+		  		  <if test="remarks != null and remarks != ''"> and remarks = #{remarks} </if>
+		  		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.uas.inte.domain.PaymentDO" useGeneratedKeys="true" keyProperty="stuPaymentId">
+		insert into user_payment
+		(
+			`stu_id`, 
+			`user_id`, 
+			`pay_id`, 
+			`pay_type`, 
+			`status`, 
+			`pay_date`, 
+			`remarks`
+		)
+		values
+		(
+			#{stuId}, 
+			#{userId}, 
+			#{payId}, 
+			#{payType}, 
+			#{status}, 
+			#{payDate}, 
+			#{remarks}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.uas.inte.domain.PaymentDO">
+		update user_payment 
+		<set>
+			<if test="stuId != null">`stu_id` = #{stuId}, </if>
+			<if test="userId != null">`user_id` = #{userId}, </if>
+			<if test="payId != null">`pay_id` = #{payId}, </if>
+			<if test="payType != null">`pay_type` = #{payType}, </if>
+			<if test="status != null">`status` = #{status}, </if>
+			<if test="payDate != null">`pay_date` = #{payDate}, </if>
+			<if test="remarks != null">`remarks` = #{remarks}</if>
+		</set>
+		where stu_payment_id = #{stuPaymentId}
+	</update>
+	
+	<delete id="remove">
+		delete from user_payment where stu_payment_id = #{value}
+	</delete>
+	
+	<delete id="batchRemove">
+		delete from user_payment where stu_payment_id in 
+		<foreach item="stuPaymentId" collection="array" open="(" separator="," close=")">
+			#{stuPaymentId}
+		</foreach>
+	</delete>
+
+</mapper>
